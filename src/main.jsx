@@ -9,6 +9,7 @@ import ContextProvider from './context/AppContext';
 import Contact from "./pages/Contact.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Project from "./pages/Project.jsx";
+import Services from "./pages/Services.jsx";
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
           path: "/", element:<App/>,
           children:[
             {
-                path: "/", element:<Home/>,
+                path: "/home", element:<Home/>,
             },
             {
               path: "/about", element:<About/>,
@@ -26,6 +27,9 @@ const router = createBrowserRouter([
             },
             {
               path: "/project", element:<Project/>,
+            },
+            {
+              path: "/services", element:<Services/>,
             },
             {
               path: "/contact", element:<Contact/>,

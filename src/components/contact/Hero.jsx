@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import page_title_image from '/contact/page-title.jpg'
+import page_title_image from '/page-title.jpg'
 
 const Hero = () => {
   return (

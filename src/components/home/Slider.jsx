@@ -37,7 +37,6 @@ const Slider = () => {
             <div className="banner-carousel owl-theme owl-carousel owl-dots-none">
             {sliders.length > 0 ? (
           sliders.map((slider, index) => (
-
             <div  key={index} className="slide-item p_relative pt_180">
             <div className="image-layer p_absolute" style={{backgroundImage:`url(${slider.image})`}} alt={slider.title} ></div>
             <div className="auto-container">

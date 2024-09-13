@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import logo from "/header/logo.png";
 
 const Nav = () => {
-  const [search, setSearch] = useState(0);
+  const [search, setSearch] = useState({});
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();

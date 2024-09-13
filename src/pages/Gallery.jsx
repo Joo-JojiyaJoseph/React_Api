@@ -1,10 +1,13 @@
 import React from 'react'
-import Banner from '../components/gallery/Banner'
+import Herogallery from '../components/gallery/Herogallery'
+import GallerySection from '../components/gallery/GallerySection'
 
 const Gallery = () => {
   return (
     <>
-    <Banner/>
+   {/* <Herogallery/> */}
+   <GallerySection/>
+
     </>
   )
 }
