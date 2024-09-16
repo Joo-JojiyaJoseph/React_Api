@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
   <Slider/>
-  <About/>
-  <Feature/>
+  {/* <About/> */}
+  {/* <Feature/> */}
     </>
   );
 };

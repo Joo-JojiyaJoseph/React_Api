@@ -15,6 +15,7 @@ const Slider = () => {
         }
         const data = await res.json();
         setSliders(data.sliders);
+        console.log(sliders)
       } 
       catch (error) {
         setError(error.message);
