@@ -1,0 +1,32 @@
+.gallery-block-one .image-box {
+    position: relative; /* Make the image box the positioning context */
+    overflow: hidden;
+  }
+  
+  .gallery-block-one .image-box img {
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .gallery-block-one .image-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-block-one .view-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    padding: 10px; /* Optional: spacing around the icon */
+    border-radius: 50%; /* Optional: make the button circular */
+  }
+  
+  .gallery-block-one .view-btn i {
+    color: white;
+    font-size: 24px; /* Adjust the size of the icon */
+  }
+  

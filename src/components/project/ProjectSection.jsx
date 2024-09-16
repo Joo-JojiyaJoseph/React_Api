@@ -1,25 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../../context/AppContext';
-
-// const projects = [
-//   {
-//     id: 1,
-//     imgSrc: 'assets/images/project/project-12.jpg',
-//     link: 'assets/images/project/project-12.jpg',
-//     title: 'House Wiring Repair',
-//     category: 'Installation',
-//     filters: ['all', 'product', 'finance', 'business'],
-//   },
-//   {
-//     id: 2,
-//     imgSrc: 'assets/images/project/project-13.jpg',
-//     link: 'assets/images/project/project-13.jpg',
-//     title: 'Landscape Lighting',
-//     category: 'Installation',
-//     filters: ['all', 'analytis', 'business', 'corporate'],
-//   },
-
-// ];
+import './Project.css';
+import { Link } from 'react-router-dom';
 
 const ProjectSection = () => {
 const { baseUrlImage } = useContext(AppContext);
@@ -78,16 +60,16 @@ useEffect(() => {
                           <img src={`${baseUrlImage}/${project.image}`} alt={project.title} />
                         </figure>
                         <div className="view-btn">
-                          <a href="" className="lightbox-image" data-fancybox="gallery">
+                          <Link to={`${baseUrlImage}/${project.image}`} alt={project.title} className="lightbox-image" data-fancybox="gallery">
                             <i className="icon-28"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="lower-content">
                         <h4>
-                          <a href="project-details.html">{project.title}</a>
+                        <Link to={`/project/${project.id}`}>{project.title}</Link>
                         </h4>
-                        {/* <span>{project.category}</span> */}
+                        <span>{project.category}</span>
                       </div>
                     </div>
                   </div>

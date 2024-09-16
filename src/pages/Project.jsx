@@ -7,6 +7,7 @@ const Project = () => {
     <>
     {/* <HeroProject/> */}
     <ProjectSection/>
+    <></>
     </>
   )
 }

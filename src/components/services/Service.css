@@ -1,0 +1,33 @@
+/* Ensure the row behaves like a flex container */
+.row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  
+  /* Ensure all service blocks stretch to the same height */
+  .service-block {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  /* Ensure inner-box fills available space */
+  .service-block-one {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  /* Ensure the content stretches to fill the available space */
+  .lower-content {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; /* To keep spacing equal */
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  

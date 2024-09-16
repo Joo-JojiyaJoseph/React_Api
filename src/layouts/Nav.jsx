@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
-import logo from "/header/logo.png";
+import logo from "/header/logo1.png";
 
 const Nav = () => {
   const [search, setSearch] = useState({});

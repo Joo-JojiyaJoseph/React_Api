@@ -7,6 +7,7 @@ const Gallery = () => {
     <>
    {/* <Herogallery/> */}
    <GallerySection/>
+   <></>
 
     </>
   )

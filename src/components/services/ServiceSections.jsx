@@ -1,30 +1,33 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../../context/AppContext';
+import './Service.css';
 
-// Define the list of services
-const services = [
-  {
-    id: 1,
-    link: 'air-conditioning.html',
-    imgSrc: 'assets/images/service/service-3.jpg',
-    altText: 'Interior Fit Out',
-    iconClass: 'icon-15',
-    title: 'Interior Fit Out',
-    description: 'Capricorn is one of the best interior fit out & MEP Contracting company in UAE.',
-  },
-  {
-    id: 2,
-    link: 'air-conditioning.html',
-    imgSrc: 'assets/images/service/service-3.jpg',
-    altText: 'Technical and Maintenance Services',
-    iconClass: 'icon-15',
-    title: 'Technical and Maintenance Services',
-    description: 'Capricorn is one of the best interior fit out & MEP Contracting company in UAE.',
-  },
 
-];
 
 const ServiceSections = () => {
+
+  const { baseUrlImage } = useContext(AppContext);
+    const [services, setservices] = useState([]);
+    const [error, setError] = useState(null);
+  
+    async function getservice() {
+      try {
+        const res = await fetch("/api/service");
+        if (!res.ok) {
+          throw new Error(`Error: ${res.status} ${res.statusText}`);
+        }
+        const data = await res.json();
+        setservices(data.services);
+      } 
+      catch (error) {
+        setError(error.message);
+      }
+    }
+    useEffect(() => {
+      getservice();
+    }, []);
+  
   return (
     <>
       {/* <!-- service-style-two --> */}
@@ -38,37 +41,44 @@ const ServiceSections = () => {
             </h2>
           </div>
           <div className="row clearfix">
-            {services.map(service => (
-              <div key={service.id} className="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div className="service-block-one">
-                  <div className="inner-box">
-                    <div className="image-box p_relative d_block">
-                      <div className="shape-1 p_absolute l_0 b_0"></div>
-                      <div className="shape-2 p_absolute l_0 b_0"></div>
-                      <figure className="image p_relative d_block">
-                        <Link to={service.link}>
-                          <img src={service.imgSrc} alt={service.altText} />
-                        </Link>
-                      </figure>
-                    </div>
-                    <div className="lower-content p_relative d_block">
-                      <div className="icon-box p_absolute r_30 w_90 h_90 lh_90 fs_40 b_radius_50 centred">
-                        <i className={service.iconClass}></i>
-                      </div>
-                      <h3>
-                        <Link to={service.link}>{service.title}</Link>
-                      </h3>
-                      <p>{service.description}</p>
-                      <div className="link">
-                        <Link to={service.link}>
-                          Read more<i className="icon-7"></i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+
+          {services.length > 0 ? (
+          services.map((service, index) => (
+            <div key={index} className="col-lg-4 col-md-6 col-sm-12 service-block">
+            <div className="service-block-one">
+              <div className="inner-box">
+                <div className="image-box p_relative d_block">
+                  <div className="shape-1 p_absolute l_0 b_0"></div>
+                  <div className="shape-2 p_absolute l_0 b_0"></div>
+                  <figure className="image p_relative d_block">
+                    <Link to="">
+                      <img src={`${baseUrlImage}/${service.image}`} alt="" />
+                    </Link>
+                  </figure>
+                </div>
+                <div className="lower-content p_relative d_block">
+                  {/* <div className="icon-box p_absolute r_30 w_90 h_90 lh_90 fs_40 b_radius_50 centred">
+                    <i className="icon-17"></i>
+                  </div> */}
+                  <h3  style={{ height: '60px' }}>
+                    <Link to="">{service.title}</Link>
+                  </h3>
+                  <p style={{ height: '120px' }}>{service.description}</p>
+                  {/* <div className="link">
+                    <Link to="">
+                      Read more<i className="icon-7"></i>
+                    </Link>
+                  </div> */}
                 </div>
               </div>
-            ))}
+            </div>
+          </div>
+          ))
+        ) : (
+          <p></p>
+        )
+        }
+
           </div>
         </div>
       </section>
