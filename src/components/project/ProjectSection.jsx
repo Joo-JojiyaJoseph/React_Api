@@ -37,7 +37,7 @@ useEffect(() => {
                 <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Project</h5>
                 <h2 className="d_block fs_40 lh_50 fw_bold">Our Recent Works</h2>
               </div>
-              <div className="filters">
+              {/* <div className="filters">
                 <ul className="filter-tabs filter-btns clearfix">
                   <li className="active filter" data-role="button" data-filter=".all">All</li>
                   <li className="filter" data-role="button" data-filter=".analytis">Analytis</li>
@@ -45,7 +45,7 @@ useEffect(() => {
                   <li className="filter" data-role="button" data-filter=".business">Business</li>
                   <li className="filter" data-role="button" data-filter=".corporate">Corporate</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="items-container row clearfix">
             {projects.length > 0 ? (
@@ -57,7 +57,7 @@ useEffect(() => {
                     <div className="inner-box">
                       <div className="image-box">
                         <figure className="image">
-                          <img src={`${baseUrlImage}/${project.image}`} alt={project.title} />
+                          <img src={`${baseUrlImage}/${project.image}`} alt={project.title} style={{height:'300px',objectFit:'cover'}} />
                         </figure>
                         <div className="view-btn">
                           <Link to={`${baseUrlImage}/${project.image}`} alt={project.title} className="lightbox-image" data-fancybox="gallery">

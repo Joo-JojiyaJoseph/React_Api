@@ -5,7 +5,7 @@ import ServiceSections from '../components/services/ServiceSections'
 const Services = () => {
   return (
     <>
-    {/* <HeroService/> */}
+    <HeroService/>
    <ServiceSections/>
     </>
   )

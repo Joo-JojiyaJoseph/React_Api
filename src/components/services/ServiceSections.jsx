@@ -35,10 +35,7 @@ const ServiceSections = () => {
         <div className="auto-container">
           <div className="sec-title p_relative centred mb_50">
             <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Our Services</h5>
-            <h2 className="d_block fs_40 lh_50 fw_bold">
-              We are a Full Service Electrical <br />
-              Contractor
-            </h2>
+            <h2 className="d_block fs_40 lh_50 fw_bold">Delivering Excellence in Every Build, <br />from Concept to Completion </h2>
           </div>
           <div className="row clearfix">
 
@@ -60,8 +57,8 @@ const ServiceSections = () => {
                   {/* <div className="icon-box p_absolute r_30 w_90 h_90 lh_90 fs_40 b_radius_50 centred">
                     <i className="icon-17"></i>
                   </div> */}
-                  <h3  style={{ height: '60px' }}>
-                    <Link to="">{service.title}</Link>
+                 <h3 style={{ height: '60px', display: 'flex', alignItems: 'center'}}>
+                   <Link to="">{service.title}</Link>
                   </h3>
                   <p style={{ height: '120px' }}>{service.description}</p>
                   {/* <div className="link">

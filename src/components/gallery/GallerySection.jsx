@@ -1,6 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import gallery_image from '/gallery/gallery1.jpg';
-import './Gallery.css';
 import { AppContext } from '../../context/AppContext';
 import { Link } from 'react-router-dom';
 
@@ -37,7 +35,7 @@ const GallerySection = () => {
                       <div className="upper-box">
                           <div className="sec-title p_relative">
                               <h5 className="d_block fs_17 lh_25 fw_medium mb_9"></h5>
-                              <h2 className="d_block fs_40 lh_50 fw_bold">Our Recent Works</h2>
+                              <h2 className="d_block fs_40 lh_50 fw_bold">Our Projects: A Glimpse into Our Excellence.</h2>
                           </div>
                       </div>
                   </div>

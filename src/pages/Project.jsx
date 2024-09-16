@@ -5,7 +5,7 @@ import ProjectSection from '../components/project/ProjectSection'
 const Project = () => {
   return (
     <>
-    {/* <HeroProject/> */}
+    <HeroProject/>
     <ProjectSection/>
     <></>
     </>
