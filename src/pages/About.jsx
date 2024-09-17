@@ -7,9 +7,9 @@ import Project from '../components/about/Project'
 const About = () => {
   return (
     <>
-    {/* <HeroAbout/> */}
-    {/* <AboutSection/> */}
-    {/* <Testimonial/> */}
+    <HeroAbout/>
+    <AboutSection/>
+    <Testimonial/>
     <Project/>
    
     </>

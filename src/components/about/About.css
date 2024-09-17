@@ -1,0 +1,7 @@
+.owl-carousel {
+    display: block !important;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}

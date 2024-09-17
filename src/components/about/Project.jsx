@@ -33,7 +33,7 @@ const Project = () => {
     <>
       {/* <!-- team-style-two --> */}
       <section className="team-style-two p_relative">
-        <div className="auto-container">
+        {/* <div className="auto-container">
           <div className="sec-title p_relative mb_45 centred">
             <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Our Staff</h5>
             <h2 className="d_block fs_40 lh_50 fw_bold">
@@ -76,7 +76,7 @@ const Project = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
       {/* <!-- team-style-two end --> */}
     </>

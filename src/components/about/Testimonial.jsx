@@ -1,87 +1,72 @@
-import React from 'react';
-
-
-const testimonials = [
-  {
-    id: 1,
-    name: 'Rachel McAdams',
-    designation: 'Electrician',
-    image: 'assets/images/resource/testimonial-1.jpg',
-    text: 'Adipisicing elit sed do eiusmod tempor incid labore et dolore magna aliqua enim minim quis veniam nostrud exercition ulamco laboris nis aliquip commodo.',
-  },
-  {
-    id: 2,
-    name: 'Jhon Haris',
-    designation: 'Electrician',
-    image: 'assets/images/resource/testimonial-2.jpg',
-    text: 'Adipisicing elit sed do eiusmod tempor incid labore et dolore magna aliqua enim minim quis veniam nostrud exercition ulamco laboris nis aliquip commodo.',
-  },
-  {
-    id: 3,
-    name: 'Rachel McAdams',
-    designation: 'Electrician',
-    image: 'assets/images/resource/testimonial-1.jpg',
-    text: 'Adipisicing elit sed do eiusmod tempor incid labore et dolore magna aliqua enim minim quis veniam nostrud exercition ulamco laboris nis aliquip commodo.',
-  },
-  {
-    id: 4,
-    name: 'Jhon Haris',
-    designation: 'Electrician',
-    image: 'assets/images/resource/testimonial-2.jpg',
-    text: 'Adipisicing elit sed do eiusmod tempor incid labore et dolore magna aliqua enim minim quis veniam nostrud exercition ulamco laboris nis aliquip commodo.',
-  },
-  {
-    id: 5,
-    name: 'Rachel McAdams',
-    designation: 'Electrician',
-    image: 'assets/images/resource/testimonial-1.jpg',
-    text: 'Adipisicing elit sed do eiusmod tempor incid labore et dolore magna aliqua enim minim quis veniam nostrud exercition ulamco laboris nis aliquip commodo.',
-  },
-  {
-    id: 6,
-    name: 'Jhon Haris',
-    designation: 'Electrician',
-    image: 'assets/images/resource/testimonial-2.jpg',
-    text: 'Adipisicing elit sed do eiusmod tempor incid labore et dolore magna aliqua enim minim quis veniam nostrud exercition ulamco laboris nis aliquip commodo.',
-  },
-];
+import React, { useContext, useEffect, useState } from 'react';
+import { AppContext } from '../../context/AppContext';
+import icon_3 from '/about/icon-3.png';
+import './About.css'
 
 const Testimonial = () => {
+  const { baseUrlImage } = useContext(AppContext);
+const [testimonials, setTestimonials] = useState([]);
+const [error, setError] = useState(null);
+
+async function gettestimonial() {
+    try {
+        const res = await fetch("/api/testimonial");
+        if (!res.ok) {
+          throw new Error(`Error: ${res.status} ${res.statusText}`);
+        }
+        const data = await res.json();
+        setTestimonials(data.testimonials);
+        console.log(data.testimonials)
+      } 
+      catch (error) {
+        setError(error.message);
+      }
+    }
+useEffect(() => {
+  gettestimonial();
+}, []);
+
   return (
     <>
 
-      <section classNameName="testimonial-style-two about-page p_relative">
-        <div classNameName="bg-layer"></div>
-        <div classNameName="auto-container">
-          <div classNameName="sec-title light p_relative mb_50 centred">
-            <h5 classNameName="d_block fs_17 lh_25 fw_medium mb_9">Testimonials</h5>
-            <h2 classNameName="d_block fs_40 lh_50 fw_bold">
+      <section className="testimonial-style-two about-page p_relative">
+        <div className="bg-layer"></div>
+        <div className="auto-container">
+          <div className="sec-title light p_relative mb_50 centred">
+            <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Testimonials</h5>
+            <h2 className="d_block fs_40 lh_50 fw_bold">
               What Our Clients Say <br /> About Easton.
             </h2>
           </div>
-          <div classNameName="two-item-carousel owl-carousel owl-theme owl-nav-none">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} classNameName="testimonial-block-one">
-                <div classNameName="inner-box p_relative d_block">
-                  <div classNameName="light-icon">
-                    <img src="assets/images/icons/icon-3.png" alt="Icon" />
+          <div className="two-item-carousel owl-carousel owl-theme owl-nav-none">
+          {testimonials.length > 0 ? (
+          testimonials.map((testimonial, index) => (
+
+              <div key={index} className="testimonial-block-one">
+                <div className="inner-box p_relative d_block">
+                  <div className="light-icon">
+                    <img src={icon_3} alt="Icon" />
                   </div>
-                  <div classNameName="icon-box p_relative d_block fs_65">
-                    <i classNameName="icon-31"></i>
+                  <div className="icon-box p_relative d_block fs_65">
+                    <i className="icon-31"></i>
                   </div>
-                  <p>{testimonial.text}</p>
-                  <div classNameName="author-box p_relative d_block">
-                    <figure classNameName="author-thumb p_absolute l_0 t_0 w_70 h_70 b_radius_50">
-                      <img src={testimonial.image} alt={testimonial.name} />
+                  <p>{testimonial.quote}</p>
+                  <div className="author-box p_relative d_block">
+                    <figure className="author-thumb p_absolute l_0 t_0 w_70 h_70 b_radius_50">
+                      <img src={`${baseUrlImage}/${testimonial.image}`} alt={testimonial.name} />
                     </figure>
                     <h5>{testimonial.name}</h5>
-                    <span classNameName="designation p_relative d_block">
+                    <span className="designation p_relative d_block">
                       {testimonial.designation}
                     </span>
                   </div>
                 </div>
               </div>
-            ))}
+              ))
+            ) : (
+              <p></p>
+            )
+            }
           </div>
         </div>
       </section>

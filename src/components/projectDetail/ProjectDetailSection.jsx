@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { AppContext } from "../../context/AppContext";
 
 const ProjectDetailSection = () => {
+  
+const { baseUrlImage } = useContext(AppContext);
   const { id } = useParams(); // Get project ID from the URL
   const [projectids, setProjectids] = useState([]);
   async function getProjectids() {
@@ -47,13 +50,8 @@ const ProjectDetailSection = () => {
 
   return (
     <>
-      <div className="project-detail">
-        <h2>{projectids.title}</h2>
-        <img src={projectids.image} alt={projectids.title} />
-        <p>{projectids.description}</p>
-      </div>
-      {/* <!-- project-details --> */}
       
+      {/* <!-- project-details --> */}
       <section className="project-details p_relative">
         <div className="auto-container">
           <div className="row clearfix">
@@ -61,47 +59,19 @@ const ProjectDetailSection = () => {
               <div className="project-details-content">
                 <div className="content-one">
                   <div className="text mb_60">
-                    <p>
-                      Exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore fugiat nulla pariatur.
-                      excepteur sint occae cat cupidatat non proident sunt in
-                      culpa qui officia deseunt molit anim est laborum Sed ut
-                      perspica tis unde omnis iste natus error sit voluptatem
-                      accusantium dolore mque laudantium, totam rem aperiam
-                      eaque ipsa quae ab illo inventore veritatis et quasi
-                      archit ecto beatae vitae dicta sunt explicabo ipsam
-                      voluptatem quia.
-                    </p>
-                    <p>
-                      Aspernatur aut odit aut fugit, sed quia consequuntur magni
-                      dolores eos qui ratione voluptatem sequi nesciunt neque
-                      porro quisquam est, qui dolorem.
-                    </p>
+                    <h2>{projectids.title}</h2>
                   </div>
                   <figure className="image-box">
-                    <img src="assets/images/project/project-18.jpg" alt="" />
+                  <img src={`${baseUrlImage}/${projectids.image}`} alt={projectids.title} style={{height:'300px',objectFit:'cover'}} />
                   </figure>
                   <div className="text">
-                    <h3>Project Discription</h3>
+                    {/* <h3>Project Discription</h3> */}
                     <p>
-                      Exercitation ullamco laboris nisi ut aliquip ex commodo
-                      consequat duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore fugiat nulla pariatur.
-                      excepteur sint occae cat cupidatat non proident sunt in
-                      culpa officia deseunt molit anim est laborum Sed
-                      perspiciatis unde omnis iste natus error sit voluptatem
-                      acusantium dolore mque laudantium, totam rem aperiam
-                      eaque.
-                    </p>
-                    <p>
-                      Abodit ipsam voluptatem quia voluptas sit aspernatur aut
-                      odit aut fugit, sed quia conse quuntur magni dolores eos
-                      qui ratione voluptatem sequi nesciunt.
+                    {projectids.description}
                     </p>
                   </div>
                 </div>
-                <div className="content-two">
+                {/* <div className="content-two">
                   <div className="image-box">
                     <div className="row clearfix">
                       <div className="col-lg-6 col-md-6 col-sm-12 image-column">
@@ -153,7 +123,7 @@ const ProjectDetailSection = () => {
                       voluptatem acusantium.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12 sidebar-side">
@@ -174,22 +144,22 @@ const ProjectDetailSection = () => {
               </div>
             </div>
           </div>
-          <div className="nav-btn clearfix">
+          {/* <div className="nav-btn clearfix">
             <div className="prev-btn pull-left">
               <h6>
-                <a href="product-details.html">
+                <Link to={`/project/${projectids.id + 1}`}>
                   <i className="far fa-angle-left"></i>Prev Project
-                </a>
+                </Link>
               </h6>
             </div>
             <div className="next-btn pull-right">
               <h6>
-                <a href="product-details.html">
+                <Link to={`/project/${projectids.id - 1}`}>
                   Next Project<i className="far fa-angle-right"></i>
-                </a>
+                </Link>
               </h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* <!-- project-details end --> */}
