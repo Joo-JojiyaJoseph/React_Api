@@ -1,0 +1,30 @@
+.search-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for vertical centering */
+}
+
+.auto-container, .outer-container {
+    width: 100%;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the row content */
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the row takes full height of the parent */
+    text-align: center; /* Optional: center the text */
+}
+
+h2, .btn-one {
+    margin-bottom: 20px; /* Add space between h2 and button */
+}

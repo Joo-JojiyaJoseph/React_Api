@@ -15,7 +15,8 @@ import ProjectDetail from "./pages/ProjectDetail.jsx";
 
 const router = createBrowserRouter([
     {
-          path: "/", element:<App/>,
+          // path: "/", element:<App/>,
+          path: "/", element:<Home/>,
           children:[
             { index: true, element: <Home/> },
             { path: "home", element:<Home/>,},

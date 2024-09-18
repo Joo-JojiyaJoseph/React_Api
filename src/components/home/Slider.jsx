@@ -1,4 +1,5 @@
-import { React, useEffect, useState } from "react";
+import { React, useContext, useEffect, useState } from "react";
+import { AppContext } from "../../context/AppContext";
 // import { PulseLoader } from "react-spinners";
 // import slider1 from '/home/banner/banner-1.jpg'
 
@@ -6,6 +7,7 @@ const Slider = () => {
 
     const [sliders, setSliders] = useState([]);
     const [error, setError] = useState(null);
+    const { baseUrlImage } = useContext(AppContext);
   
     async function getSlider() {
       try {
@@ -15,7 +17,6 @@ const Slider = () => {
         }
         const data = await res.json();
         setSliders(data.sliders);
-        console.log(sliders)
       } 
       catch (error) {
         setError(error.message);
@@ -39,7 +40,7 @@ const Slider = () => {
             {sliders.length > 0 ? (
           sliders.map((slider, index) => (
             <div  key={index} className="slide-item p_relative pt_180">
-            <div className="image-layer p_absolute" style={{backgroundImage:`url(${slider.image})`}} alt={slider.title} ></div>
+            <div className="image-layer p_absolute" style={{backgroundImage:`url(${baseUrlImage}/uploads/slider/${slider.image})`}} alt={slider.title} ></div>
             <div className="auto-container">
                 <div className="content-box p_relative d_block z_5">
                     <h2 className="p_relative d_block fs_60 lh_70 fw_bold mb_18">{slider.title} <span>Electricty</span> Service for Your Family</h2>
