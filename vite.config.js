@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target:'https://capricornuae.com/AdminApi/',
+        target:'https://capricornuae.com/AdminApi',
         changeOrigin:true,
         headers:{
           'Content-Type': 'application/json',
