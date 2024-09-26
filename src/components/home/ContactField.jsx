@@ -4,16 +4,16 @@ const ContactField = () => {
   return (
     <>
       {/* <!-- contact-field --> */}
-      <section class="search-field">
-        <div class="auto-container">
-          <div class="outer-container">
-            <div class="title-text centred p_relative d_block">
+      <section className="search-field">
+        <div className="auto-container">
+          <div className="outer-container">
+            <div className="title-text centred p_relative d_block">
               <h6>Contact Us Today</h6>
             </div>
-            <div class="search-area">
-              <div class="row clearfix">
+            <div className="search-area">
+              <div className="row clearfix">
                 <h2>Let’s Build Something Great Together</h2>
-                <button type="button" class="theme-btn btn-one">
+                <button type="button" className="theme-btn btn-one">
                   Contact
                 </button>
               </div>

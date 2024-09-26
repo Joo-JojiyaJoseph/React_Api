@@ -7,61 +7,61 @@ const Services = () => {
   return (
     <>
     {/* <!-- service-section --> */}
-        <section class="service-section">
-            <div class="pattern-layer">
-                <div class="pattern-1" style={{backgroundImage:`url(${shape_3})`}}></div>
-                <div class="pattern-2"  style={{backgroundImage:`url(${shape_4})`}}></div>
+        <section className="service-section">
+            <div className="pattern-layer">
+                <div className="pattern-1" style={{backgroundImage:`url(${shape_3})`}}></div>
+                <div className="pattern-2"  style={{backgroundImage:`url(${shape_4})`}}></div>
             </div>
-            <div class="auto-container">
-                <div class="sec-title p_relative mb_50 centred">
-                    <h5 class="d_block fs_17 lh_25 fw_medium mb_9">Our Services</h5>
-                    <h2 class="d_block fs_40 lh_50 fw_bold">We are a Full Service Electrical <br />Contractor</h2>
+            <div className="auto-container">
+                <div className="sec-title p_relative mb_50 centred">
+                    <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Our Services</h5>
+                    <h2 className="d_block fs_40 lh_50 fw_bold">We are a Full Service Electrical <br />Contractor</h2>
                 </div>
-                <div class="tabs-box">
-                    <div class="tab-btn-box p_relative d_block mb_60 centred">
-                        <ul class="tab-btns tab-buttons clearfix">
-                            <li class="tab-btn" data-tab="#tab-1">Domestic Services</li>
-                            <li class="tab-btn active-btn" data-tab="#tab-2">Industrial Services</li>
-                            <li class="tab-btn" data-tab="#tab-3">Commercial Services</li>
+                <div className="tabs-box">
+                    <div className="tab-btn-box p_relative d_block mb_60 centred">
+                        <ul className="tab-btns tab-buttons clearfix">
+                            <li className="tab-btn" data-tab="#tab-1">Domestic Services</li>
+                            <li className="tab-btn active-btn" data-tab="#tab-2">Industrial Services</li>
+                            <li className="tab-btn" data-tab="#tab-3">Commercial Services</li>
                         </ul>
                     </div>
-                    <div class="tabs-content">
-                        <div class="tab" id="tab-1">
-                            <div class="inner-box">
-                                <div class="row clearfix">
-                                    <div class="col-lg-8 col-md-12 col-sm-12 content-column">
-                                        <div class="content_block_two">
-                                            <div class="content-box p_relative d_block mr_70">
-                                                <div class="text p_relative d_block">
+                    <div className="tabs-content">
+                        <div className="tab" id="tab-1">
+                            <div className="inner-box">
+                                <div className="row clearfix">
+                                    <div className="col-lg-8 col-md-12 col-sm-12 content-column">
+                                        <div className="content_block_two">
+                                            <div className="content-box p_relative d_block mr_70">
+                                                <div className="text p_relative d_block">
                                                     <h3>Domestic Service</h3>
                                                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                 </div>
-                                                <div class="row clearfix">
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                        <div class="single-item p_relative d_block">
-                                                            <div class="icon-box"><i class="icon-15"></i></div>
+                                                <div className="row clearfix">
+                                                    <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                        <div className="single-item p_relative d_block">
+                                                            <div className="icon-box"><i className="icon-15"></i></div>
                                                             <h4><a href="air-conditioning.html">Air Conditioning</a></h4>
                                                             <p>Lorem ipsum dolor amet con adicing elit sed.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                        <div class="single-item p_relative d_block">
-                                                            <div class="icon-box"><i class="icon-16"></i></div>
+                                                    <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                        <div className="single-item p_relative d_block">
+                                                            <div className="icon-box"><i className="icon-16"></i></div>
                                                             <h4><a href="heating-service.html">Heating Service</a></h4>
                                                             <p>Lorem ipsum dolor amet con adicing elit sed.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                        <div class="single-item p_relative d_block">
-                                                            <div class="icon-box"><i class="icon-17"></i></div>
+                                                    <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                        <div className="single-item p_relative d_block">
+                                                            <div className="icon-box"><i className="icon-17"></i></div>
                                                             <h4><a href="indoor-lighting.html">Indoor Lighting</a></h4>
                                                             <p>Lorem ipsum dolor amet con adicing elit sed.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                        <div class="single-item p_relative d_block">
-                                                            <div class="icon-box"><i class="icon-18"></i></div>
+                                                    <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                        <div className="single-item p_relative d_block">
+                                                            <div className="icon-box"><i className="icon-18"></i></div>
                                                             <h4><a href="security-system.html">Security System</a></h4>
                                                             <p>Lorem ipsum dolor amet con adicing elit sed.</p>
                                                         </div>
@@ -70,71 +70,71 @@ const Services = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-12 col-sm-12 image-column">
-                                        <div class="image_block_two">
-                                            <div class="image-box p_relative d_block mt_8">
-                                                <figure class="image p_relative d_block">
+                                    <div className="col-lg-4 col-md-12 col-sm-12 image-column">
+                                        <div className="image_block_two">
+                                            <div className="image-box p_relative d_block mt_8">
+                                                <figure className="image p_relative d_block">
                                                     <img src="assets/images/service/service-1.jpg" alt=""/></figure>
-                                                <div class="icon-box"><i class="icon-45"></i></div>
+                                                <div className="icon-box"><i className="icon-45"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab active-tab" id="tab-2">
-                            <div class="inner-box">
-                                <div class="content_block_two">
-                                    <div class="content-box p_relative d_block">
-                                        <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-12 col-sm-12 text-column">
-                                                <div class="text p_relative d_block">
+                        <div className="tab active-tab" id="tab-2">
+                            <div className="inner-box">
+                                <div className="content_block_two">
+                                    <div className="content-box p_relative d_block">
+                                        <div className="row clearfix">
+                                            <div className="col-lg-4 col-md-12 col-sm-12 text-column">
+                                                <div className="text p_relative d_block">
                                                     <h3>Industrial Service</h3>
                                                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                                     <p>Excepteur sint occaecat cupidatat non proid ent, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
-                                                <div class="inner-content">
-                                                    <div class="row clearfix">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item p_relative d_block">
-                                                                <div class="icon-box"><i class="icon-15"></i></div>
+                                            <div className="col-lg-8 col-md-12 col-sm-12 inner-column">
+                                                <div className="inner-content">
+                                                    <div className="row clearfix">
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div className="single-item p_relative d_block">
+                                                                <div className="icon-box"><i className="icon-15"></i></div>
                                                                 <h4><a href="air-conditioning.html">Air Conditioning</a></h4>
                                                                 <p>Lorem ipsum dolor amet con adicing elit sed.do usmod tempor ux ncididunt enim ad minim veniam.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item p_relative d_block">
-                                                                <div class="icon-box"><i class="icon-16"></i></div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div className="single-item p_relative d_block">
+                                                                <div className="icon-box"><i className="icon-16"></i></div>
                                                                 <h4><a href="heating-service.html">Heating Service</a></h4>
                                                                 <p>Lorem ipsum dolor amet con adicing elit sed.do usmod tempor ux ncididunt enim ad minim veniam.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item p_relative d_block">
-                                                                <div class="icon-box"><i class="icon-17"></i></div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div className="single-item p_relative d_block">
+                                                                <div className="icon-box"><i className="icon-17"></i></div>
                                                                 <h4><a href="indoor-lighting.html">Indoor Lighting</a></h4>
                                                                 <p>Lorem ipsum dolor amet con adicing elit sed.do usmod tempor ux ncididunt enim ad minim veniam.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item p_relative d_block">
-                                                                <div class="icon-box"><i class="icon-18"></i></div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div className="single-item p_relative d_block">
+                                                                <div className="icon-box"><i className="icon-18"></i></div>
                                                                 <h4><a href="security-system.html">Security System</a></h4>
                                                                 <p>Lorem ipsum dolor amet con adicing elit sed.do usmod tempor ux ncididunt enim ad minim veniam.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item p_relative d_block">
-                                                                <div class="icon-box"><i class="icon-19"></i></div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div className="single-item p_relative d_block">
+                                                                <div className="icon-box"><i className="icon-19"></i></div>
                                                                 <h4><a href="power-outlets.html">Power Outlets</a></h4>
                                                                 <p>Lorem ipsum dolor amet con adicing elit sed.do usmod tempor ux ncididunt enim ad minim veniam.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                                            <div class="single-item p_relative d_block">
-                                                                <div class="icon-box"><i class="icon-20"></i></div>
+                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div className="single-item p_relative d_block">
+                                                                <div className="icon-box"><i className="icon-20"></i></div>
                                                                 <h4><a href="electrical-panels.html">Electrical Panels</a></h4>
                                                                 <p>Lorem ipsum dolor amet con adicing elit sed.do usmod tempor ux ncididunt enim ad minim veniam.</p>
                                                             </div>
@@ -147,29 +147,29 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="tab" id="tab-3">
-                            <div class="inner-box">
-                                <div class="row clearfix">
-                                    <div class="col-lg-4 col-md-12 col-sm-12 image-column">
-                                        <div class="image_block_three">
-                                            <div class="image-box p_relative d_block">
-                                                <figure class="image p_relative d_block"><img src="assets/images/service/service-2.jpg" alt=""/></figure>
-                                                <div class="text">
-                                                    <h5><i class="icon-45"></i>Best of Electrical Services</h5>
+                        <div className="tab" id="tab-3">
+                            <div className="inner-box">
+                                <div className="row clearfix">
+                                    <div className="col-lg-4 col-md-12 col-sm-12 image-column">
+                                        <div className="image_block_three">
+                                            <div className="image-box p_relative d_block">
+                                                <figure className="image p_relative d_block"><img src="assets/images/service/service-2.jpg" alt=""/></figure>
+                                                <div className="text">
+                                                    <h5><i className="icon-45"></i>Best of Electrical Services</h5>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-8 col-md-12 col-sm-12 content-column">
-                                        <div class="content_block_three">
-                                            <div class="content-box">
-                                                <div class="text">
+                                    <div className="col-lg-8 col-md-12 col-sm-12 content-column">
+                                        <div className="content_block_three">
+                                            <div className="content-box">
+                                                <div className="text">
                                                     <h3>Commercial Service</h3>
                                                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                                                 </div>
-                                                <div class="list-box clearfix">
-                                                    <ul class="list-style-one clearfix">
+                                                <div className="list-box clearfix">
+                                                    <ul className="list-style-one clearfix">
                                                         <li>Air Conditioning</li>
                                                         <li>Electric Heating Systems</li>
                                                         <li>Telephone & Computer Wiring</li>
@@ -177,7 +177,7 @@ const Services = () => {
                                                         <li>Power Outlets</li>
                                                         <li>Appliances Overheat</li>
                                                     </ul>
-                                                    <ul class="list-style-one clearfix">
+                                                    <ul className="list-style-one clearfix">
                                                         <li>Frequent Power Surges</li>
                                                         <li>Rising Power Bills</li>
                                                         <li>Flickering Lights</li>
