@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="loader-wrap">
+      {/* <div className="loader-wrap">
         <div className="preloader">
           <div className="preloader-close">x</div>
           <div id="handle-preloader" className="handle-preloader">
@@ -29,7 +29,7 @@ const Nav = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <!--Search Popup--> */}
       <div id="search-popup" className="search-popup">
@@ -93,7 +93,7 @@ const Nav = () => {
               <div className="logo-box">
                 <figure className="logo">
                   <a href="index.html">
-                    <img src={logo} alt="" />
+                    <img src="" alt="" />
                   </a>
                 </figure>
               </div>
@@ -119,7 +119,7 @@ const Nav = () => {
               </div>
               <div className="btn-box">
                 <a href="index.html" className="theme-btn btn-one">
-                  Appointment
+                  Brochure
                 </a>
               </div>
             </div>
@@ -146,7 +146,7 @@ const Nav = () => {
               </div>
               <div className="search-box-outer search-toggler"><i className="icon-5"></i> </div>
               <div className="btn-box">
-                <a href="index.html" className="theme-btn btn-one"> Appointment</a>
+                <a href="index.html" className="theme-btn btn-one"> Brochure</a>
               </div>
             </div>
           </div>

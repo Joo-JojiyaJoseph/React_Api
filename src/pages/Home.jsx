@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
   <Slider/>
-  <ContactField/>
+  <ContactField/> 
   <About/>
   <Feature/>
   <Services/>
@@ -29,7 +29,7 @@ const Home = () => {
   <Client/>
   <Funfact/>
   <Cta/>
-    </>
+  </>
   );
 };
 

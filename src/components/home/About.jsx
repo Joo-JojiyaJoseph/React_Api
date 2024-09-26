@@ -5,6 +5,7 @@ import about1 from '/home/about-1.jpg'
 import icon1 from '/home/icon-1.png'
 import icon2 from '/home/icon-2.png'
 import signature_1 from '/home/signature_1.png'
+import './home.js'; 
 
 const About = () => {
   return (
