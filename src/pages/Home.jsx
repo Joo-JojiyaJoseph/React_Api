@@ -25,8 +25,8 @@ const Home = () => {
   <Choose/>
   <Project/>
   <Faq/>
-  <Testimonial/>
   <Client/>
+  <Testimonial/>
   <Funfact/>
   <Cta/>
   </>
