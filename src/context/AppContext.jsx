@@ -9,7 +9,7 @@ const [baseUrlImage, setBaseUrlImage] = useState('');
 
 async function getBaseUrlImage() {
     try {
-        const res = await fetch("/api/baseimageurl");
+        const res = await fetch("http://127.0.0.1:8000/api/baseimageurl");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }

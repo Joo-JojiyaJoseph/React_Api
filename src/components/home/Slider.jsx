@@ -11,7 +11,7 @@ const Slider = () => {
   
     async function getSlider() {
       try {
-        const res = await fetch("/api/slider");
+        const res = await fetch("http://127.0.0.1:8000/api/slider");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }

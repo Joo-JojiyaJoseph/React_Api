@@ -1,5 +1,15 @@
 import React from "react";
-
+const Justifycentred = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',  // This will stack the h2 and button vertically
+  textAlign: 'center', 
+           // Add some padding (optional)
+};
+const buttonStyle = {
+  marginTop: '20px'         // Add margin at the top of the button
+};
 const ContactField = () => {
   return (
     <>
@@ -11,9 +21,9 @@ const ContactField = () => {
               <h6>Contact Us Today</h6>
             </div>
             <div className="search-area">
-              <div className="row clearfix">
+            <div className="row clearfix" style={Justifycentred}>
                 <h2>Let’s Build Something Great Together</h2>
-                <button type="button" className="theme-btn btn-one">
+                <button type="button" className="theme-btn btn-one" style={buttonStyle}> 
                   Contact
                 </button>
               </div>

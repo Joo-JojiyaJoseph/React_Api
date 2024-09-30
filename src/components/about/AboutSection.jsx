@@ -47,10 +47,28 @@ const AboutSection = () => {
                   </div>
                   <div className="text p_relative d_block mb_30">
                     <p>
-                      All of our services are backed by our 100% satisfaction guarantee. Our
-                      electricians can install anything from new security lighting for outdoors to
-                      a whole home generator that will keep your appliances working during a power
-                      outage.
+                    Capricorn is a registered company in the UAE, The Head office
+and workshop is located in Abu Dhabi, So we can deliver a more
+convenient service to our clients across the UAE.
+
+Capricorn MEP is part of organization established and in full
+operation Since 2018. After a couple of years,we have proven our
+position in the market in the field of Construction and MEP
+Services by being one of the fastest growing companies in the
+Region.
+
+Capricorn MEP understands clearly the needs of each company
+participating in various Projects, Every client has its own
+distinctive requirement and we are committed to providing the
+best and suitable solutions in terms of Engineering Design,
+Supply, Execution and after sales services.
+
+Capricorn MEP employs professional staff who will certainly
+assist you from the design and planning stage until the successful
+implementation.
+
+Our team is equipped with the latest machinery,equipment, tools
+materials and most of all skilled and dedicated workers.
                     </p>
                   </div>
                   <div className="inner p_relative d_block mb_40">
@@ -60,7 +78,7 @@ const AboutSection = () => {
                           <div className="icon-box">
                             <i className="icon-9"></i>
                           </div>
-                          <h4>Emergency Repairs</h4>
+                          <h4>MEP Design</h4>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12 single-column">
@@ -68,7 +86,7 @@ const AboutSection = () => {
                           <div className="icon-box">
                             <i className="icon-10"></i>
                           </div>
-                          <h4>Rewiring and Check-up</h4>
+                          <h4>HVAC SERVICES</h4>
                         </div>
                       </div>
                     </div>
@@ -78,9 +96,9 @@ const AboutSection = () => {
                     <li>Wiring and installation/upgrades</li>
                     <li>Full-service electrical layout, design</li>
                   </ul>
-                  <figure className="signature">
+                  {/* <figure className="signature">
                     <img src={signature_1} alt="Signature" />
-                  </figure>
+                  </figure> */}
                 </div>
               </div>
             </div>

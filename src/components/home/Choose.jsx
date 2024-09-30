@@ -21,7 +21,7 @@ const Choose = () => {
                                 <div className="sec-title p_relative mb_30">
                                     <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Why Choose Us</h5>
                                     <h2 className="d_block fs_40 lh_50 fw_bold mb_25">Great Reasons For People Choose Easton</h2>
-                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.</p>
+                                    <p>Capricorn MEP employs professional staff who will certainly assist you from the design and planning stage until the successful implementation.Our team is equipped with the latest machinery,equipment, tools materials and most of all skilled and dedicated workers.</p>
                                 </div>
                                 <div className="inner-box centred p_relative d_block">
                                     <div className="row clearfix">
