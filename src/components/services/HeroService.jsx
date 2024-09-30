@@ -1,5 +1,6 @@
 import React from 'react'
 import page_title_image from '/page-title.jpg'
+import { Link } from 'react-router-dom'
 
 const HeroService = () => {
   return (
@@ -11,7 +12,7 @@ const HeroService = () => {
                 <div class="content-box">
                     <h2>Services</h2>
                     <ul class="bread-crumb clearfix">
-                        <li><a href="">Home</a></li>
+                    <li><Link to="home">Home</Link></li>
                         <li>Services</li>
                     </ul>
                 </div>

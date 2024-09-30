@@ -13,7 +13,7 @@ const ServiceSections = () => {
   
     async function getservice() {
       try {
-        const res = await fetch("/api/service");
+        const res = await fetch("https://capricornuae.com/AdminApi/api/service");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }

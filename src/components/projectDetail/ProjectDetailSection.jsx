@@ -9,7 +9,7 @@ const { baseUrlImage } = useContext(AppContext);
   const [projectids, setProjectids] = useState([]);
   async function getProjectids() {
     try {
-      const res_id = await fetch(`/api/projectids/${id}`);
+      const res_id = await fetch(`https://capricornuae.com/AdminApi/api/projectids/${id}`);
       if (!res_id.ok) {
         throw new Error(`Error: ${res_id.status} ${res_id.statusText}`);
       }

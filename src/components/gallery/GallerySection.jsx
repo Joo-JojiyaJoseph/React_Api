@@ -9,7 +9,7 @@ const GallerySection = () =>  {
     
     async function getgallery() {
         try {
-            const res = await fetch("/api/gallery");
+            const res = await fetch("https://capricornuae.com/AdminApi/api/gallery");
             if (!res.ok) {
               throw new Error(`Error: ${res.status} ${res.statusText}`);
             }

@@ -10,7 +10,7 @@ const [error, setError] = useState(null);
 
 async function getProject() {
     try {
-        const res = await fetch("/api/project");
+        const res = await fetch("https://capricornuae.com/AdminApi/api/project");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }

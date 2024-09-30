@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import page_title_image from '/page-title.jpg'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ProjectDetailHeroSection = () => {
   const { id } = useParams(); // Get project ID from the URL
   const [projectids, setProjectids] = useState([]);
   async function getProjectids() {
     try {
-      const res_id = await fetch(`/api/projectids/${id}`);
+      const res_id = await fetch(`https://capricornuae.com/AdminApi/api/projectids/${id}`);
       if (!res_id.ok) {
         throw new Error(`Error: ${res_id.status} ${res_id.statusText}`);
       }
@@ -34,7 +34,7 @@ const ProjectDetailHeroSection = () => {
              <div className="content-box">
                  <h2>{projectids.title}</h2>
                  <ul className="bread-crumb clearfix">
-                     <li><a href="">Home</a></li>
+                 <li><Link to="home">Home</Link></li>
                      <li>Projects</li>
                  </ul>
              </div>

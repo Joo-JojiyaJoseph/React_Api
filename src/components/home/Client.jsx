@@ -9,7 +9,7 @@ const Client = () => {
     
     async function getclient() {
         try {
-            const res = await fetch("/api/clients");
+            const res = await fetch("https://capricornuae.com/AdminApi/api/clients");
             if (!res.ok) {
               throw new Error(`Error: ${res.status} ${res.statusText}`);
             }

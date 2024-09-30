@@ -41,7 +41,7 @@ const Services = () => {
                                                     <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                         <div className="single-item p_relative d_block">
                                                             <div className="icon-box"><i className="icon-15"></i></div>
-                                                            <h4><a href="air-conditioning.html">Air Conditioning</a></h4>
+                                                            <h4><a >Air Conditioning</a></h4>
                                                             <p>Lorem ipsum dolor amet con adicing elit sed.</p>
                                                         </div>
                                                     </div>
@@ -99,38 +99,38 @@ const Services = () => {
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
                                                                 <div className="icon-box"><i className="icon-15"></i></div>
-                                                                <h4><a href="air-conditioning.html">MEP Design</a></h4>
+                                                                <h4><a >MEP Design</a></h4>
                                                                 <p> We are able to undertake complex MEP design and build projects at any level, up to major residential, commercial and industrial service for our clients using the most innovative and energy sector projects with high. </p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
                                                                 <div className="icon-box"><i className="icon-16"></i></div>
-                                                                <h4><a href="heating-service.html">HVAC ENGINEERING SERVICES</a></h4>
+                                                                <h4><a >HVAC ENGINEERING SERVICES</a></h4>
                                                                 <p>HVAC - a specialist Company in the UAE We provide HVAC (Heating, ventilation & Air Conditioning) systems including automated control systems to expertly manage the climatic working environment of your business. </p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
                                                                 <div className="icon-box"><i className="icon-17"></i></div>
-                                                                <h4><a href="indoor-lighting.html">ELECTRICAL ENGINEERING</a></h4>
+                                                                <h4><a>ELECTRICAL ENGINEERING</a></h4>
                                                                 <p>We offer a complete service from feasibility study to conceptual design and installation. </p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
                                                                 <div className="icon-box"><i className="icon-18"></i></div>
-                                                                <h4><a href="security-system.html"> PLUMBING ENGINEERING SERVICES</a></h4>
+                                                                <h4><a > PLUMBING ENGINEERING SERVICES</a></h4>
                                                                 <p>Our plumbing services team handles all aspects of plumbing, water supply, drainage, swimming pool filtration systems.</p>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                        {/* <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
                                                                 <div className="icon-box"><i className="icon-19"></i></div>
-                                                                <h4><a href="power-outlets.html">MAINTENANCE</a></h4>
+                                                                <h4><a >MAINTENANCE</a></h4>
                                                                 <p>We are a highly successful maintenance services company and our offices will work with you to protect your investment. </p>
                                                             </div>
-                                                        </div>
+                                                        </div> */}
                                                       
                                                     </div>
                                                 </div>

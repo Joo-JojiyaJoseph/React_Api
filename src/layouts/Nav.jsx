@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Navigation from "./Navigation";
-import logo from "/header/logo1.png";
+// import logo from "/header/logo1.png";
+import { Link } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 const Nav = () => {
+  
+const { logo,brochure } = useContext(AppContext);
   const [search, setSearch] = useState({});
 
   const handleSearchSubmit = (event) => {
@@ -36,9 +40,9 @@ const Nav = () => {
         <div className="popup-inner">
           <div className="upper-box clearfix">
             <figure className="logo-box pull-left">
-              <a href="index.html">
+              <Link to="home">
                 <img src={logo} alt="" />
-              </a>
+              </Link>
             </figure>
             <div className="close-search pull-right">
               <span className="far fa-times"></span>
@@ -77,10 +81,10 @@ const Nav = () => {
             <div className="right-column">
               <ul className="social-links clearfix">
                 <li> <p>Follow Us:</p></li>
-                <li><a href="index.html"> <i className="fab fa-facebook-f"></i> </a> </li>
-                <li><a href="index.html"> <i className="fab fa-twitter"></i></a></li>
-                <li> <a href="index.html"><i className="fab fa-linkedin-in"></i></a> </li>
-                <li> <a href="index.html"><i className="fab fa-pinterest-p"></i> </a></li>
+                <li> <Link to="home"> <i className="fab fa-facebook-f"></i> </Link> </li>
+                <li> <Link to="home"> <i className="fab fa-twitter"></i></Link></li>
+                <li>  <Link to="home"><i className="fab fa-linkedin-in"></i></Link> </li>
+                <li>  <Link to="home"><i className="fab fa-pinterest-p"></i> </Link></li>
               </ul>
             </div>
           </div>
@@ -92,9 +96,9 @@ const Nav = () => {
             <div className="menu-area clearfix">
               <div className="logo-box">
                 <figure className="logo">
-                  <a href="index.html">
+                   <Link to="home">
                     <img src="" alt="" />
-                  </a>
+                  </Link>
                 </figure>
               </div>
               {/* <!--Mobile Navigation Toggler--> */}
@@ -118,9 +122,9 @@ const Nav = () => {
                 <i className="icon-5"></i>
               </div>
               <div className="btn-box">
-                <a href="index.html" className="theme-btn btn-one">
+              <Link to={brochure.image} className="theme-btn btn-one">
                   Brochure
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -131,7 +135,7 @@ const Nav = () => {
           <div className="outer-box">
             <div className="menu-area clearfix">
               <div className="logo-box">
-                <figure className="logo"> <a href="index.html"> <img src={logo} alt="" /> </a> </figure>
+                <figure className="logo">  <Link to="home"> <img src={logo} alt="" /> </Link> </figure>
               </div>
               <nav className="main-menu clearfix">
                 {/* <!--Keep This Empty / Menu will come through Javascript--> */}
@@ -146,7 +150,7 @@ const Nav = () => {
               </div>
               <div className="search-box-outer search-toggler"><i className="icon-5"></i> </div>
               <div className="btn-box">
-                <a href="index.html" className="theme-btn btn-one"> Brochure</a>
+              <Link to={brochure.image} className="theme-btn btn-one"> Brochure</Link>
               </div>
             </div>
           </div>
@@ -160,7 +164,7 @@ const Nav = () => {
         <div className="close-btn"> <i className="fas fa-times"></i></div>
         <nav className="menu-box">
           <div className="nav-logo">
-            <a href="index.html"><img src={logo} alt="" title=""/> </a>
+             <Link to="home"><img src={logo} alt="" title=""/> </Link>
           </div>
           <div className="menu-outer">
             {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
@@ -175,11 +179,11 @@ const Nav = () => {
           </div>
           <div className="social-links">
             <ul className="clearfix">
-              <li><a href="index.html"><span className="fab fa-twitter"></span></a> </li>
-              <li><a href="index.html"><span className="fab fa-facebook-square"></span> </a></li>
-              <li><a href="index.html"><span className="fab fa-pinterest-p"></span></a> </li>
-              <li><a href="index.html"><span className="fab fa-instagram"></span> </a> </li>
-              <li><a href="index.html"><span className="fab fa-youtube"></span></a> </li>
+              <li> <Link to="home"><span className="fab fa-twitter"></span></Link> </li>
+              <li> <Link to="home"><span className="fab fa-facebook-square"></span> </Link></li>
+              <li> <Link to="home"><span className="fab fa-pinterest-p"></span></Link> </li>
+              <li> <Link to="home"><span className="fab fa-instagram"></span> </Link> </li>
+              <li> <Link to="home"><span className="fab fa-youtube"></span></Link> </li>
             </ul>
           </div>
         </nav>

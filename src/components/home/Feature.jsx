@@ -17,9 +17,9 @@ const Feature = () => {
                                 <figure className="image-box p_relative d_block"><img src={feature_1} alt=""/></figure>
                                 <div className="content-box p_relative d_block">
                                     <div className="icon-box p_relative d_block fs_50 lh_50"><i className="icon-12"></i></div>
-                                    <h3><a href="index.html">Plumbing Engineering Services.</a></h3>
+                                    <h3><a >Plumbing Engineering Services.</a></h3>
                                     {/* <p>Lorem ipsum dolor amet cons adicing elit sed.</p> */}
-                                    {/* <div className="link"><a href="index.html"><span>Read more</span><i className="icon-7"></i></a></div> */}
+                                    {/* <div className="link"><a ><span>Read more</span><i className="icon-7"></i></a></div> */}
                                 </div>
                             </div>
                         </div>
@@ -30,9 +30,9 @@ const Feature = () => {
                                 <figure className="image-box p_relative d_block"><img src={feature_2} alt=""/></figure>
                                 <div className="content-box p_relative d_block">
                                     <div className="icon-box p_relative d_block fs_50 lh_50"><i className="icon-13"></i></div>
-                                    <h3><a href="index.html">HVAC ENGINEERING SERVICES</a></h3>
+                                    <h3><a >HVAC ENGINEERING SERVICES</a></h3>
                                     {/* <p>Lorem ipsum dolor amet cons adicing elit sed.</p> */}
-                                    {/* <div className="link"><a href="index.html"><span>Read more</span><i className="icon-7"></i></a></div> */}
+                                    {/* <div className="link"><a ><span>Read more</span><i className="icon-7"></i></a></div> */}
                                 </div>
                             </div>
                         </div>
@@ -43,9 +43,9 @@ const Feature = () => {
                                 <figure className="image-box p_relative d_block"><img src={feature_3} alt=""/></figure>
                                 <div className="content-box p_relative d_block">
                                     <div className="icon-box p_relative d_block fs_50 lh_50"><i className="icon-14"></i></div>
-                                    <h3><a href="index.html">Best Maintanance</a></h3>
+                                    <h3><a >Best Maintanance</a></h3>
                                     {/* <p>Lorem ipsum dolor amet cons adicing elit sed.</p> */}
-                                    {/* <div className="link"><a href="index.html"><span>Read more</span><i className="icon-7"></i></a></div> */}
+                                    {/* <div className="link"><a ><span>Read more</span><i className="icon-7"></i></a></div> */}
                                 </div>
                             </div>
                         </div>

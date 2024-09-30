@@ -1,5 +1,6 @@
 import React from 'react'
 import page_title_image from '/page-title.jpg'
+import { Link } from 'react-router-dom'
 
 const HeroProject = () => {
 
@@ -12,7 +13,7 @@ const HeroProject = () => {
                 <div class="content-box">
                     <h2>Projects</h2>
                     <ul class="bread-crumb clearfix">
-                        <li><a href="">Home</a></li>
+                    <li><Link to="home">Home</Link></li>
                         <li>Projects</li>
                     </ul>
                 </div>
