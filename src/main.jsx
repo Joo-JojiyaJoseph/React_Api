@@ -11,6 +11,8 @@ import Gallery from "./pages/Gallery.jsx";
 import Project from "./pages/Project.jsx";
 import Services from "./pages/Services.jsx";
 import ProjectDetail from "./pages/ProjectDetail.jsx";
+import Career from "./pages/Career.jsx";
+import Servicedetail from "./pages/Servicedetail.jsx";
 
 
 const router = createBrowserRouter([
@@ -25,7 +27,9 @@ const router = createBrowserRouter([
             { path: "project", element:<Project/>, },
             { path: "services", element:<Services/>,},
             { path: "contact", element:<Contact/>, },
+            { path: "career", element:<Career/>, },
             { path: "project/:id", element: <ProjectDetail/> },
+            { path: "service/:id", element: <Servicedetail/> },
           ]
         
     },

@@ -7,12 +7,12 @@ const HeroProject = () => {
   return (
     <>
        {/* <!-- Page Title --> */}
-        <section class="page-title centred">
+        <section className="page-title centred">
         <div className="bg-layer parallax-bg" data-parallax='{"y": 100}' style={{backgroundImage:`url(${page_title_image})`}}></div>
-            <div class="auto-container">
-                <div class="content-box">
+            <div className="auto-container">
+                <div className="content-box">
                     <h2>Projects</h2>
-                    <ul class="bread-crumb clearfix">
+                    <ul className="bread-crumb clearfix">
                     <li><Link to="home">Home</Link></li>
                         <li>Projects</li>
                     </ul>

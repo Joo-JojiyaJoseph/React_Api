@@ -24,15 +24,18 @@ const { baseUrlImage } = useContext(AppContext);
     }
   }
 
+  
   useEffect(() => {
-    getProjectids();
-  }, []);
+    if (id) {
+      getProjectids();
+    }
+  }, [id]);
 
   //Get projects ,List----------------------
   const [projects, setProjects] = useState([]);
   async function getProject() {
     try {
-      const res = await fetch("/api/project");
+      const res = await fetch("https://capricornuae.com/AdminApi/api/project");
       if (!res.ok) {
         throw new Error(`Error: ${res.status} ${res.statusText}`);
       }

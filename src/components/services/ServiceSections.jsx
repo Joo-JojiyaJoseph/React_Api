@@ -13,7 +13,7 @@ const ServiceSections = () => {
   
     async function getservice() {
       try {
-        const res = await fetch("https://capricornuae.com/AdminApi/api/service");
+        const res = await fetch("http://127.0.0.1:8000/api/service");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }
@@ -61,11 +61,11 @@ const ServiceSections = () => {
                    <Link to="">{service.title}</Link>
                   </h3>
                   <p style={{ height: '120px' }}>{service.description}</p>
-                  {/* <div className="link">
-                    <Link to="">
+                  <div className="link">
+                    <Link to={`/service/${service.id}`}>
                       Read more<i className="icon-7"></i>
                     </Link>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
