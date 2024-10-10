@@ -15,7 +15,6 @@ const CareerSection = () => {
             }
             const data = await res.json();
             setCareers(data.job);
-            console.log(data.job)
           } 
           catch (error) {
             setError(error.message);
@@ -36,6 +35,7 @@ const CareerSection = () => {
                 <div className="row clearfix">
                 {careers.length > 0 ? (
               careers.map((career, index) => (
+
                     <div  key={index} className="col-lg-6 col-md-6 col-sm-12 testimonial-block">
                         <div className="testimonial-block-one">
                             <div className="inner-box p_relative d_block">
@@ -49,7 +49,7 @@ const CareerSection = () => {
                                     <figure className="author-thumb p_absolute l_0 t_0 w_70 h_70 b_radius_50">
                                         <img src={careergif} alt=""/>
                                         </figure>
-                                      {/* <div className="link"><Link to="">read More</Link></div> */}
+                                      <div className="link"> <Link to={`/career/${career.id}`}>read More</Link></div>
                                     <span className="designation p_relative d_block"></span>
                                 </div>
                             </div>

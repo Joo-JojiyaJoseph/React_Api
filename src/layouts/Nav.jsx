@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 const Nav = () => {
-  
-const { logo,brochure } = useContext(AppContext);
+  const { logo, brochure } = useContext(AppContext);
   const [search, setSearch] = useState({});
 
   const handleSearchSubmit = (event) => {
@@ -54,9 +53,17 @@ const { logo,brochure } = useContext(AppContext);
               <form onSubmit={handleSearchSubmit}>
                 <div className="form-group">
                   <fieldset>
-                    <input type="search" className="form-control" name="search-input" value={search} onChange={(e) => setSearch(e.target.value)}
-                      placeholder="Type your keyword and hit" required />
-                    <button type="submit"><i className="far fa-search"></i>
+                    <input
+                      type="search"
+                      className="form-control"
+                      name="search-input"
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                      placeholder="Type your keyword and hit"
+                      required
+                    />
+                    <button type="submit">
+                      <i className="far fa-search"></i>
                     </button>
                   </fieldset>
                 </div>
@@ -73,18 +80,53 @@ const { logo,brochure } = useContext(AppContext);
           <div className="top-inner">
             <div className="left-column">
               <ul className="info clearfix">
-                <li> <i className="icon-1"></i>Sun-Thu 08:00AM-05:00PM</li>
-                <li> <i className="icon-2"></i>380 Albert St, Melborne</li>
-                <li> <i className="icon-3"></i> <a href="mailto:needhelp@info.com">needhelp@info.com</a></li>
+                <li>
+                  {" "}
+                  <i className="icon-1"></i>Sun-Thu 08:00AM-05:00PM
+                </li>
+                <li>
+                  {" "}
+                  <i className="icon-2"></i>380 Albert St, Melborne
+                </li>
+                <li>
+                  {" "}
+                  <i className="icon-3"></i>{" "}
+                  <a href="mailto:needhelp@info.com">needhelp@info.com</a>
+                </li>
               </ul>
             </div>
             <div className="right-column">
               <ul className="social-links clearfix">
-                <li> <p>Follow Us:</p></li>
-                <li> <Link to="home"> <i className="fab fa-facebook-f"></i> </Link> </li>
-                <li> <Link to="home"> <i className="fab fa-twitter"></i></Link></li>
-                <li>  <Link to="home"><i className="fab fa-linkedin-in"></i></Link> </li>
-                <li>  <Link to="home"><i className="fab fa-pinterest-p"></i> </Link></li>
+                <li>
+                  {" "}
+                  <p>Follow Us:</p>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="home">
+                    {" "}
+                    <i className="fab fa-facebook-f"></i>{" "}
+                  </Link>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <Link to="home">
+                    {" "}
+                    <i className="fab fa-twitter"></i>
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="home">
+                    <i className="fab fa-linkedin-in"></i>
+                  </Link>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <Link to="home">
+                    <i className="fab fa-pinterest-p"></i>{" "}
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -96,7 +138,7 @@ const { logo,brochure } = useContext(AppContext);
             <div className="menu-area clearfix">
               <div className="logo-box">
                 <figure className="logo">
-                   <Link to="home">
+                  <Link to="home">
                     <img src="" alt="" />
                   </Link>
                 </figure>
@@ -118,13 +160,20 @@ const { logo,brochure } = useContext(AppContext);
                   <a href="tel:123045615523">+1 (230)-456-155-23</a>
                 </h6>
               </div>
-              <div className="search-box-outer search-toggler">
+              {/* <div className="search-box-outer search-toggler">
                 <i className="icon-5"></i>
-              </div>
+              </div> */}
               <div className="btn-box">
-              <Link to={brochure.image} className="theme-btn btn-one">
-                  Brochure
-                </Link>
+                {brochure ? (
+                  <Link
+                    to={brochure.image}
+                    className="theme-btn btn-one"
+                    target="_blank" // Open link in a new tab
+                    rel="noopener noreferrer" // Security measure
+                  >
+                    Brochure
+                  </Link>
+                ) : null}
               </div>
             </div>
           </div>
@@ -135,7 +184,13 @@ const { logo,brochure } = useContext(AppContext);
           <div className="outer-box">
             <div className="menu-area clearfix">
               <div className="logo-box">
-                <figure className="logo">  <Link to="home"> <img src={logo} alt="" /> </Link> </figure>
+                <figure className="logo">
+                  {" "}
+                  <Link to="home">
+                    {" "}
+                    <img src={logo} alt="" />{" "}
+                  </Link>{" "}
+                </figure>
               </div>
               <nav className="main-menu clearfix">
                 {/* <!--Keep This Empty / Menu will come through Javascript--> */}
@@ -148,9 +203,20 @@ const { logo,brochure } = useContext(AppContext);
                   <a href="tel:123045615523">+1 (230)-456-155-23</a>
                 </h6>
               </div>
-              <div className="search-box-outer search-toggler"><i className="icon-5"></i> </div>
+              {/* <div className="search-box-outer search-toggler">
+                <i className="icon-5"></i>{" "}
+              </div> */}
               <div className="btn-box">
-              <Link to={brochure.image} className="theme-btn btn-one"> Brochure</Link>
+                {brochure ? (
+                  <Link
+                    to={brochure.image}
+                    className="theme-btn btn-one"
+                    target="_blank" // Open link in a new tab
+                    rel="noopener noreferrer" // Security measure
+                  >
+                    Brochure
+                  </Link>
+                ) : null}
               </div>
             </div>
           </div>
@@ -161,10 +227,15 @@ const { logo,brochure } = useContext(AppContext);
       {/* <!-- Mobile Menu  --> */}
       <div className="mobile-menu">
         <div className="menu-backdrop"></div>
-        <div className="close-btn"> <i className="fas fa-times"></i></div>
+        <div className="close-btn">
+          {" "}
+          <i className="fas fa-times"></i>
+        </div>
         <nav className="menu-box">
           <div className="nav-logo">
-             <Link to="home"><img src={logo} alt="" title=""/> </Link>
+            <Link to="home">
+              <img src={logo} alt="" title="" />{" "}
+            </Link>
           </div>
           <div className="menu-outer">
             {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
@@ -173,24 +244,52 @@ const { logo,brochure } = useContext(AppContext);
             <h4>Contact Info</h4>
             <ul>
               <li>Chicago 12, Melborne City, USA</li>
-              <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-              <li><a href="mailto:info@example.com">info@example.com</a></li>
+              <li>
+                <a href="tel:+8801682648101">+88 01682648101</a>
+              </li>
+              <li>
+                <a href="mailto:info@example.com">info@example.com</a>
+              </li>
             </ul>
           </div>
           <div className="social-links">
             <ul className="clearfix">
-              <li> <Link to="home"><span className="fab fa-twitter"></span></Link> </li>
-              <li> <Link to="home"><span className="fab fa-facebook-square"></span> </Link></li>
-              <li> <Link to="home"><span className="fab fa-pinterest-p"></span></Link> </li>
-              <li> <Link to="home"><span className="fab fa-instagram"></span> </Link> </li>
-              <li> <Link to="home"><span className="fab fa-youtube"></span></Link> </li>
+              <li>
+                {" "}
+                <Link to="home">
+                  <span className="fab fa-twitter"></span>
+                </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link to="home">
+                  <span className="fab fa-facebook-square"></span>{" "}
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="home">
+                  <span className="fab fa-pinterest-p"></span>
+                </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link to="home">
+                  <span className="fab fa-instagram"></span>{" "}
+                </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link to="home">
+                  <span className="fab fa-youtube"></span>
+                </Link>{" "}
+              </li>
             </ul>
           </div>
         </nav>
       </div>
 
       {/* <!-- End Mobile Menu --> */}
-
     </>
   );
 };

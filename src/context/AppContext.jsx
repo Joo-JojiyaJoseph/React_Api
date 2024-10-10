@@ -42,7 +42,7 @@ async function getBaseUrlImage() {
       }
       async function getBrochure() {
         try {
-            const resbrochure = await fetch("https://capricornuae.com/AdminApi/api/brochure");
+            const resbrochure = await fetch("http://127.0.0.1:8000/api/brochure");
             if (!resbrochure.ok) {
               throw new Error(`Error: ${resbrochure.status} ${resbrochure.statusText}`);
             }
