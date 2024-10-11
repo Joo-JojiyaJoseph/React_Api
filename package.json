@@ -1,5 +1,5 @@
 {
-  "homepage": "/myapp",
+  "homepage": ".",
   "name": "-latest",
   "private": true,
   "version": "0.0.0",
