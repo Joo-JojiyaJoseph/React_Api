@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 const Nav = () => {
+  
+  const { baseUrlImage } = useContext(AppContext);
   const { logo, brochure } = useContext(AppContext);
   const [search, setSearch] = useState({});
 
@@ -188,7 +190,7 @@ const Nav = () => {
                   {" "}
                   <Link to="home">
                     {" "}
-                    <img src={logo} alt="" />{" "}
+                    <img src={`${baseUrlImage}/uploads/logo/${logo}`}  alt="" />{" "}
                   </Link>{" "}
                 </figure>
               </div>
@@ -234,7 +236,7 @@ const Nav = () => {
         <nav className="menu-box">
           <div className="nav-logo">
             <Link to="home">
-              <img src={logo} alt="" title="" />{" "}
+              <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt="" title="" />{" "}
             </Link>
           </div>
           <div className="menu-outer">

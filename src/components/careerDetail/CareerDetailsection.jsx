@@ -7,7 +7,7 @@ const CareerDetailsection = () => {
     const [careerids, setCareerids] = useState([]);
     async function getCareerids() {
       try {
-        const res_id = await fetch(`http://127.0.0.1:8000/api/careerids/${id}`);
+        const res_id = await fetch(`https://capricornuae.com/AdminApi/api/careerids/${id}`);
         if (!res_id.ok) {
           throw new Error(`Error: ${res_id.status} ${res_id.statusText}`);
         }
@@ -32,7 +32,7 @@ const CareerDetailsection = () => {
     const [careers, setCareers] = useState([]);
     async function getCareer() {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/job");
+        const res = await fetch("https://capricornuae.com/AdminApi/api/job");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }

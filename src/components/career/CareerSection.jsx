@@ -9,7 +9,7 @@ const CareerSection = () => {
     
     async function getcareer() {
         try {
-            const res = await fetch("http://127.0.0.1:8000/api/job");
+            const res = await fetch("https://capricornuae.com/AdminApi/api/job");
             if (!res.ok) {
               throw new Error(`Error: ${res.status} ${res.statusText}`);
             }

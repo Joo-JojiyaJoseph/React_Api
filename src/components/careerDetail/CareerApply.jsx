@@ -1,12 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const CareerApply = () => {
+
+  const { id } = useParams(); // Get  ID from the URL
+  const [careerids, setCareerids] = useState([]);
+  async function getCareerids() {
+    try {
+      const res_id = await fetch(`https://capricornuae.com/AdminApi/api/careerids/${id}`);
+      if (!res_id.ok) {
+        throw new Error(`Error: ${res_id.status} ${res_id.statusText}`);
+      }
+      const data_id = await res_id.json();
+      if (data_id.status == 200) {
+        setCareerids(data_id.careerids);
+      } else {
+        return <div>Loading...</div>;
+      }
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+  useEffect(() => {
+    if (id) {
+      getCareerids();
+    }
+  }, [id]);
+
+
+  ///////////////////////////////////////
+
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     resume: null,
-    job: '',
+    job: careerids.title,
   });
 
   const [responseMessage, setResponseMessage] = useState('');
@@ -35,11 +65,11 @@ const CareerApply = () => {
     formDataToSend.append('name', formData.name);
     formDataToSend.append('email', formData.email);
     formDataToSend.append('phone', formData.phone);
-    formDataToSend.append('job', formData.job);
+    formDataToSend.append('job', careerids.title);
     formDataToSend.append('resume', formData.resume);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/careerApply', {
+      const response = await fetch('https://capricornuae.com/AdminApi/api/careerApply', {
         method: 'POST',
         body: formDataToSend,
       });
@@ -121,11 +151,23 @@ const CareerApply = () => {
                   </div>
                   <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                     <input
-                      type="file"
-                      name="resume"
-                      onChange={handleFileChange}
+                      type="text"
+                      name="job"
+                      placeholder={careerids.title}
                       required
+                      value={careerids.title}
+                      readOnly
+                      onChange={handleChange}
                     />
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12 form-group">
+                  <input
+  type="file"
+  name="resume"
+  accept=".pdf,.doc,.docx"
+  onChange={handleFileChange}
+  required
+/>
                   </div>
                   <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                     <div className="check-box">

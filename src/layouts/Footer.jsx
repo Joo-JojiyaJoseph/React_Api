@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from "/header/logo1.png";
 
 const Footer = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    // Show button when page is scrolled down
+    const toggleVisibility = () => {
+        if (window.scrollY > 300) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
+
+    // Scroll to top when the button is clicked
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisibility);
+        return () => {
+            window.removeEventListener('scroll', toggleVisibility);
+        };
+    }, []);
   return (
     <>
     
@@ -103,16 +128,16 @@ const Footer = () => {
 
 
         {/* <!--Scroll to top--> */}
-        <div className="scroll-to-top">
-            <div>
-                <div className="scroll-top-inner">
-                    <div className="scroll-bar">
-                        <div className="bar-inner"></div>
+        {isVisible && (
+                <div className="scroll-to-top" onClick={scrollToTop} style={{ cursor: 'pointer' }}>
+                    <div className="scroll-top-inner">
+                        <div className="scroll-bar">
+                            <div className="bar-inner"></div>
+                        </div>
+                        <div className="scroll-bar-text">Go To Top</div>
                     </div>
-                    <div className="scroll-bar-text">Go To Top</div>
                 </div>
-            </div>
-        </div>
+            )}
         {/* <!-- Scroll to top end --> */}
     </>
   )
