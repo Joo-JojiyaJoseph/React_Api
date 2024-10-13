@@ -195,7 +195,7 @@ const Nav = () => {
                 </figure>
               </div>
               <nav className="main-menu clearfix">
-                {/* <!--Keep This Empty / Menu will come through Javascript--> */}
+              <Navigation />
               </nav>
             </div>
             <div className="nav-right">
@@ -240,7 +240,7 @@ const Nav = () => {
             </Link>
           </div>
           <div className="menu-outer">
-            {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
+          <Navigation />
           </div>
           <div className="contact-info">
             <h4>Contact Info</h4>
