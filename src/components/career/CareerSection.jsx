@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import careergif from '/career/career.gif';
+import careergif from '/careers/career.gif';
 import { Link } from 'react-router-dom';
 
 const CareerSection = () => {

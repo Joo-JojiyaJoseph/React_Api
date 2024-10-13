@@ -1,7 +1,7 @@
 import React from 'react'
-import feature_1 from '/home/feature-1.jpg'
-import feature_2 from '/home/feature-2.jpg'
-import feature_3 from '/home/feature-3.jpg'
+import feature_1 from '/homes/feature-1.jpg'
+import feature_2 from '/homes/feature-2.jpg'
+import feature_3 from '/homes/feature-3.jpg'
 
 
 const Feature = () => {

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../context/AppContext";
-import testimonial_bg from '/home/testimonial-bg.jpg';
-import testimonial_bg_2 from '/home/testimonial-bg-2.jpg';
+import testimonial_bg from '/homes/testimonial-bg.jpg';
+import testimonial_bg_2 from '/homes/testimonial-bg-2.jpg';
 
 const Testimonial = () => {
   const { baseUrlImage } = useContext(AppContext);

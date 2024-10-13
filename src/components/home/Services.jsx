@@ -1,7 +1,7 @@
 import React from 'react'
 
-import shape_3 from '/home/shape-3.png'
-import shape_4 from '/home/shape-4.png'
+import shape_3 from '/homes/shape-3.png'
+import shape_4 from '/homes/shape-4.png'
 
 const Services = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../../context/AppContext';
-import icon_3 from '/about/icon-3.png';
+import icon_3 from '/abouts/icon-3.png';
 import './About.css'
 
 const Testimonial = () => {

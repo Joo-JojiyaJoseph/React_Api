@@ -1,10 +1,10 @@
 import React from 'react';
-import pattern_layer from '/about/shape-24.png';
-import shape_1 from '/about/shape-45.png';
-import icon_box from '/about/icon-1.png';
-import about_5 from '/about/about-5.jpg';
-import about_6 from '/about/about-6.jpg';
-import signature_1 from '/about/signature-1.png';
+import pattern_layer from '/abouts/shape-24.png';
+import shape_1 from '/abouts/shape-45.png';
+import icon_box from '/abouts/icon-1.png';
+import about_5 from '/abouts/about-5.jpg';
+import about_6 from '/abouts/about-6.jpg';
+import signature_1 from '/abouts/signature-1.png';
 
 const AboutSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import shape_12 from '/home/shape-12.png'
-import shape_13 from '/home/shape-13.png'
-import shape_7 from '/home/shape-7.png'
+import shape_12 from '/homes/shape-12.png'
+import shape_13 from '/homes/shape-13.png'
+import shape_7 from '/homes/shape-7.png'
 const Cta = () => {
   return (
     <>

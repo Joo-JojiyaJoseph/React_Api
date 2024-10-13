@@ -52,7 +52,14 @@ const ContactSection = () => {
             {/* Google Map Section */}
             <section className="google-map-section">
                 <div className="map-inner p_relative d_block">
-                    <iframe
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3634.2253010850773!2d54.537239074707!3d24.3734645843506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e47246e5e49ad%3A0x2a1b94e357a855b2!2sMinistry%20of%20Labor%2C%20Mazyad%20Mall!5e0!3m2!1sen!2sin!4v1728363094301!5m2!1sen!2sin"
+                     width="100%"
+                     height="450"
+                     style={{ border: 0 }}
+                     allowFullScreen
+                     loading="lazy"
+                     referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    {/* <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14538.929553238806!2d54.487438!3d24.355813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e40fa9d8c18f5%3A0xcfc6e5d72dbc9b74!2sMusaffah%20-%20M-39%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1726199558730!5m2!1sen!2sus"
                         width="100%"
                         height="450"
@@ -60,7 +67,7 @@ const ContactSection = () => {
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                    ></iframe> */}
                 </div>
             </section>
 

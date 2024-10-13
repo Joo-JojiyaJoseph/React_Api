@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import shape_9 from '/home/shape-9.png';
-import faq_1 from '/home/faq-1.jpg';
-import faq_2 from '/home/faq-2.jpg';
+import shape_9 from '/homes/shape-9.png';
+import faq_1 from '/homes/faq-1.jpg';
+import faq_2 from '/homes/faq-2.jpg';
 import './home.js'; 
 
 const Faq = () => {

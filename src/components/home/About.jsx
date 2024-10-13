@@ -1,10 +1,10 @@
 import React from 'react'
-import shape2 from '/home/shape-2.png'
-import shape1 from '/home/shape-1.png'
-import about1 from '/home/about-1.jpg'
-import icon1 from '/home/icon-1.png'
-import icon2 from '/home/icon-2.png'
-import signature_1 from '/home/signature_1.png'
+import shape2 from '/homes/shape-2.png'
+import shape1 from '/homes/shape-1.png'
+import about1 from '/homes/about-1.jpg'
+import icon1 from '/homes/icon-1.png'
+import icon2 from '/homes/icon-2.png'
+import signature_1 from '/homes/signature_1.png'
 import './home.js'; 
 
 const About = () => {

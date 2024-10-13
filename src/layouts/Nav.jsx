@@ -17,24 +17,24 @@ const Nav = () => {
 
   return (
     <>
-      {/* <div className="loader-wrap">
+      <div className="loader-wrap">
         <div className="preloader">
           <div className="preloader-close">x</div>
           <div id="handle-preloader" className="handle-preloader">
             <div className="animation-preloader">
               <div className="spinner"></div>
               <div className="txt-loading">
-                <span data-text-preloader="e" className="letters-loading">e</span>
-                <span data-text-preloader="a" className="letters-loading">a</span>
-                <span data-text-preloader="s" className="letters-loading">s</span>
-                <span data-text-preloader="t" className="letters-loading">t</span>
+                <span data-text-preloader="we" className="letters-loading">we</span>
+                <span data-text-preloader="l" className="letters-loading">l</span>
+                <span data-text-preloader="c" className="letters-loading">c</span>
                 <span data-text-preloader="o" className="letters-loading">o</span>
-                <span data-text-preloader="n" className="letters-loading">n</span>
+                <span data-text-preloader="m" className="letters-loading">m</span>
+                <span data-text-preloader="e" className="letters-loading">e</span>
               </div>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* <!--Search Popup--> */}
       <div id="search-popup" className="search-popup">
@@ -42,7 +42,7 @@ const Nav = () => {
           <div className="upper-box clearfix">
             <figure className="logo-box pull-left">
               <Link to="home">
-                <img src={logo} alt="" />
+                <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt="" />
               </Link>
             </figure>
             <div className="close-search pull-right">
@@ -141,7 +141,7 @@ const Nav = () => {
               <div className="logo-box">
                 <figure className="logo">
                   <Link to="home">
-                    <img src="" alt="" />
+                    <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt="" />
                   </Link>
                 </figure>
               </div>

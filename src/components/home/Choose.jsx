@@ -1,10 +1,10 @@
 import React from 'react'
-import shape_5 from '/home/shape-5.png'
-import shape_6 from '/home/shape-6.png'
-import shape_7 from '/home/shape-7.png'
+import shape_5 from '/homes/shape-5.png'
+import shape_6 from '/homes/shape-6.png'
+import shape_7 from '/homes/shape-7.png'
 
-import chooseus_1 from '/home/chooseus-1.jpg'
-import chooseus_2 from '/home/chooseus-1.jpg'
+import chooseus_1 from '/homes/chooseus-1.jpg'
+import chooseus_2 from '/homes/chooseus-1.jpg'
 
 const Choose = () => {
   return (
