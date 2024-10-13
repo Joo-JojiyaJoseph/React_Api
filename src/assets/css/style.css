@@ -1544,7 +1544,7 @@ div#mCSB_1_container{
 
 .banner-carousel .content-box h2{
   color: #fff;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   -ms-transform: translateY(50px);
@@ -1574,7 +1574,7 @@ div#mCSB_1_container{
 .banner-carousel .content-box p{
   line-height: 28px;
   color: #fff;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   -ms-transform: translateY(50px);

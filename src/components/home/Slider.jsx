@@ -43,8 +43,8 @@ const Slider = () => {
             <div className="image-layer p_absolute" style={{backgroundImage:`url(${baseUrlImage}/uploads/slider/${slider.image})`}} alt={slider.title} ></div>
             <div className="auto-container">
                 <div className="content-box p_relative d_block z_5">
-                    <h2 className="p_relative d_block fs_60 lh_70 fw_bold mb_18">{slider.title} <span>Electricty</span> Service for Your Family</h2>
-                    <p className="p_relative d_block fs_18">{slider.description} Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim.</p>
+                    <h2 className="p_relative d_block fs_60 lh_70 fw_bold mb_18"> <span>{slider.title}</span> {slider.toptitle}</h2>
+                    <p className="p_relative d_block fs_18">{slider.subtitle} </p>
                 </div> 
             </div>
         </div>
