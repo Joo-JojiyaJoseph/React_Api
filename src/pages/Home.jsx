@@ -53,7 +53,7 @@ const Home = () => {
         <meta property="og:description" content={seoData.og_description} />
         <meta property="og:image" content={seoData.image} />
       </Helmet>
-  <Slider/>
+  {/* <Slider/>
   <ContactField/> 
   <About/>
   <Feature/>
@@ -64,7 +64,7 @@ const Home = () => {
   <Client/>
   <Testimonial/>
   <Funfact/>
-  <Cta/>
+  <Cta/> */}
   </>
   );
 };
