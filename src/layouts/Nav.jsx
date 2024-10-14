@@ -17,6 +17,10 @@ const Nav = () => {
     alert(`Form submitted with search term: ${search}`);
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuVisible(false);
+  };
+  
   const toggleMobileMenu = () => {
     setMobileMenuVisible(prevState => !prevState);
   };
@@ -222,10 +226,9 @@ const Nav = () => {
       </header>
 
       {/* Mobile Menu */}
-    {/* Mobile Menu */}
-<div className={`mobile-menu ${isMobileMenuVisible ? 'visible' : ''}`}>
-  <div className="menu-backdrop" onClick={toggleMobileMenu}></div>
-  <div className="close-btn" onClick={toggleMobileMenu}>
+<nav className={`mobile-menu ${isMobileMenuVisible ? 'visible' : ''}`}>
+  <div className="menu-backdrop" onClick={closeMobileMenu}></div>
+  <div className="close-btn" onClick={closeMobileMenu}>
     <i className="fas fa-times"></i>
   </div>
   <nav className="menu-box">
@@ -235,10 +238,12 @@ const Nav = () => {
       </Link>
     </div>
     <div className="menu-outer">
-      <Navigation />
+      {/* Update the Navigation component or its links here */}
+      <Navigation closeMobileMenu={closeMobileMenu} />
     </div>
   </nav>
-</div>
+</nav>
+
 
     </>
   );
