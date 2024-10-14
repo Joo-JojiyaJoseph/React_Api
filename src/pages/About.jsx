@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import HeroAbout from '../components/about/HeroAbout'
 import AboutSection from '../components/about/AboutSection'
 import Testimonial from '../components/about/Testimonial'
 import Project from '../components/about/Project'
 import { Helmet } from 'react-helmet-async'
+import { AppContext } from '../context/AppContext'
 
 const About = () => {
+  const { baseUrlImage } = useContext(AppContext);
   const [error, setError] = useState(null);
   const [seoData, setSeoData] = useState({
     title: 'Default Title',
@@ -41,7 +43,7 @@ const About = () => {
         <meta name="keywords" content={seoData.keywords} />
         <meta property="og:title" content={seoData.og_title} />
         <meta property="og:description" content={seoData.og_description} />
-        <meta property="og:image" content={seoData.image} />
+        <meta property="og:image" content={`${baseUrlImage}/${seoData.image}`} />
       </Helmet>
     <HeroAbout/>
     <AboutSection/>

@@ -1,4 +1,4 @@
-import  React, { useEffect, useState } from "react";
+import  React, { useContext, useEffect, useState } from "react";
 import Slider from "../components/home/Slider";
 import About from "../components/home/About";
 import Feature from "../components/home/Feature";
@@ -12,10 +12,13 @@ import Choose from "../components/home/Choose";
 import Faq from "../components/home/Faq";
 import Services from "../components/home/Services";
 import { Helmet } from "react-helmet-async";
+import { AppContext } from "../context/AppContext";
 
 
 const Home = () => {
   // const { name } = useContext(AppContext);
+  
+  const { baseUrlImage } = useContext(AppContext);
   const [error, setError] = useState(null);
   const [seoData, setSeoData] = useState({
     title: 'Default Title',
@@ -51,7 +54,7 @@ const Home = () => {
         <meta name="keywords" content={seoData.keywords} />
         <meta property="og:title" content={seoData.og_title} />
         <meta property="og:description" content={seoData.og_description} />
-        <meta property="og:image" content={seoData.image} />
+        <meta property="og:image" content={`${baseUrlImage}/${seoData.image}`} />
       </Helmet>
   {/* <Slider/>
   <ContactField/> 

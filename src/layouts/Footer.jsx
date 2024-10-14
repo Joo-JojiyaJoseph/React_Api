@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import logo from "/header/logo1.png";
+import { Link } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const { baseUrlImage } = useContext(AppContext);
 
     // Show button when page is scrolled down
     const toggleVisibility = () => {
@@ -56,7 +59,9 @@ const Footer = () => {
                     <div className="row clearfix">
                         <div className="col-lg-5 col-md-6 col-sm-12 footer-column">
                             <div className="footer-widget logo-widget">
-                                <figure className="footer-logo"><a href="index.html"><img src={logo} alt=""/></a></figure>
+                                <figure className="footer-logo"><Link to="/home">
+                                    <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt=""/>
+                                    </Link></figure>
                                 <div className="text">
                                     <p>Capricorn brings your designs to life. A great concept can make your space truly unique. We offer unlimited design options tailored to any space, creating environments you'll love to show off. </p>
                                 </div>
@@ -69,10 +74,10 @@ const Footer = () => {
                                 </div>
                                 <div className="widget-content">
                                     <ul className="links-list clearfix">
-                                        <li><a href="">Home</a></li>
-                                        <li><a href="">About</a></li>
-                                        <li><a href="">Service</a></li>
-                                        <li><a href="">Project</a></li>
+                                    <li><Link to="/home">Home</Link></li>
+                                     <li><Link to="/about">About</Link></li>
+                                     <li><Link to="/services">Services</Link></li>
+                                     <li><Link to="/career">Career</Link></li>
                                     </ul>
                                 </div>
                             </div>

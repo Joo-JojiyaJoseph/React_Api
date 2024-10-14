@@ -1,19 +1,33 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Navigation from "./Navigation";
-// import logo from "/header/logo1.png";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
+import './Navig.js';
+import './Navig.css';
 
 const Nav = () => {
   
   const { baseUrlImage } = useContext(AppContext);
   const { logo, brochure } = useContext(AppContext);
   const [search, setSearch] = useState({});
+  const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-    alert(`form submited`);
+    alert(`Form submitted with search term: ${search}`);
   };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(prevState => !prevState);
+  };
+
+  useEffect(() => {
+    if (isMobileMenuVisible) {
+      document.body.classList.add("mobile-menu-visible");
+    } else {
+      document.body.classList.remove("mobile-menu-visible");
+    }
+  }, [isMobileMenuVisible]);
 
   return (
     <>
@@ -36,7 +50,7 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* <!--Search Popup--> */}
+      {/* Search Popup */}
       <div id="search-popup" className="search-popup">
         <div className="popup-inner">
           <div className="upper-box clearfix">
@@ -75,24 +89,21 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* <!-- main header --> */}
+      {/* Main Header */}
       <header className="main-header">
-        {/* <!-- header-top --> */}
+        {/* Header Top */}
         <div className="header-top">
           <div className="top-inner">
             <div className="left-column">
               <ul className="info clearfix">
                 <li>
-                  {" "}
                   <i className="icon-1"></i>Sun-Thu 08:00AM-05:00PM
                 </li>
                 <li>
-                  {" "}
                   <i className="icon-2"></i>380 Albert St, Melborne
                 </li>
                 <li>
-                  {" "}
-                  <i className="icon-3"></i>{" "}
+                  <i className="icon-3"></i>
                   <a href="mailto:needhelp@info.com">needhelp@info.com</a>
                 </li>
               </ul>
@@ -100,33 +111,26 @@ const Nav = () => {
             <div className="right-column">
               <ul className="social-links clearfix">
                 <li>
-                  {" "}
                   <p>Follow Us:</p>
                 </li>
                 <li>
-                  {" "}
                   <Link to="home">
-                    {" "}
-                    <i className="fab fa-facebook-f"></i>{" "}
-                  </Link>{" "}
+                    <i className="fab fa-facebook-f"></i>
+                  </Link>
                 </li>
                 <li>
-                  {" "}
                   <Link to="home">
-                    {" "}
                     <i className="fab fa-twitter"></i>
                   </Link>
                 </li>
                 <li>
-                  {" "}
                   <Link to="home">
                     <i className="fab fa-linkedin-in"></i>
-                  </Link>{" "}
+                  </Link>
                 </li>
                 <li>
-                  {" "}
                   <Link to="home">
-                    <i className="fab fa-pinterest-p"></i>{" "}
+                    <i className="fab fa-pinterest-p"></i>
                   </Link>
                 </li>
               </ul>
@@ -134,7 +138,7 @@ const Nav = () => {
           </div>
         </div>
 
-        {/* <!-- header-lower --> */}
+        {/* Header Lower */}
         <div className="header-lower">
           <div className="outer-box">
             <div className="menu-area clearfix">
@@ -145,8 +149,8 @@ const Nav = () => {
                   </Link>
                 </figure>
               </div>
-              {/* <!--Mobile Navigation Toggler--> */}
-              <div className="mobile-nav-toggler">
+              {/* Mobile Navigation Toggler */}
+              <div className="mobile-nav-toggler" onClick={toggleMobileMenu}>
                 <i className="icon-bar"></i>
                 <i className="icon-bar"></i>
                 <i className="icon-bar"></i>
@@ -162,16 +166,13 @@ const Nav = () => {
                   <a href="tel:123045615523">+1 (230)-456-155-23</a>
                 </h6>
               </div>
-              {/* <div className="search-box-outer search-toggler">
-                <i className="icon-5"></i>
-              </div> */}
               <div className="btn-box">
                 {brochure ? (
                   <Link
                     to={brochure.image}
                     className="theme-btn btn-one"
-                    target="_blank" // Open link in a new tab
-                    rel="noopener noreferrer" // Security measure
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Brochure
                   </Link>
@@ -181,21 +182,19 @@ const Nav = () => {
           </div>
         </div>
 
-        {/* <!--sticky Header--> */}
+        {/* Sticky Header */}
         <div className="sticky-header">
           <div className="outer-box">
             <div className="menu-area clearfix">
               <div className="logo-box">
                 <figure className="logo">
-                  {" "}
                   <Link to="home">
-                    {" "}
-                    <img src={`${baseUrlImage}/uploads/logo/${logo}`}  alt="" />{" "}
-                  </Link>{" "}
+                    <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt="" />
+                  </Link>
                 </figure>
               </div>
               <nav className="main-menu clearfix">
-              <Navigation />
+                <Navigation />
               </nav>
             </div>
             <div className="nav-right">
@@ -205,16 +204,13 @@ const Nav = () => {
                   <a href="tel:123045615523">+1 (230)-456-155-23</a>
                 </h6>
               </div>
-              {/* <div className="search-box-outer search-toggler">
-                <i className="icon-5"></i>{" "}
-              </div> */}
               <div className="btn-box">
                 {brochure ? (
                   <Link
                     to={brochure.image}
                     className="theme-btn btn-one"
-                    target="_blank" // Open link in a new tab
-                    rel="noopener noreferrer" // Security measure
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Brochure
                   </Link>
@@ -224,74 +220,26 @@ const Nav = () => {
           </div>
         </div>
       </header>
-      {/* <!-- main-header end --> */}
 
-      {/* <!-- Mobile Menu  --> */}
-      <div className="mobile-menu">
-        <div className="menu-backdrop"></div>
-        <div className="close-btn">
-          {" "}
-          <i className="fas fa-times"></i>
-        </div>
-        <nav className="menu-box">
-          <div className="nav-logo">
-            <Link to="home">
-              <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt="" title="" />{" "}
-            </Link>
-          </div>
-          <div className="menu-outer">
-          <Navigation />
-          </div>
-          <div className="contact-info">
-            <h4>Contact Info</h4>
-            <ul>
-              <li>Chicago 12, Melborne City, USA</li>
-              <li>
-                <a href="tel:+8801682648101">+88 01682648101</a>
-              </li>
-              <li>
-                <a href="mailto:info@example.com">info@example.com</a>
-              </li>
-            </ul>
-          </div>
-          <div className="social-links">
-            <ul className="clearfix">
-              <li>
-                {" "}
-                <Link to="home">
-                  <span className="fab fa-twitter"></span>
-                </Link>{" "}
-              </li>
-              <li>
-                {" "}
-                <Link to="home">
-                  <span className="fab fa-facebook-square"></span>{" "}
-                </Link>
-              </li>
-              <li>
-                {" "}
-                <Link to="home">
-                  <span className="fab fa-pinterest-p"></span>
-                </Link>{" "}
-              </li>
-              <li>
-                {" "}
-                <Link to="home">
-                  <span className="fab fa-instagram"></span>{" "}
-                </Link>{" "}
-              </li>
-              <li>
-                {" "}
-                <Link to="home">
-                  <span className="fab fa-youtube"></span>
-                </Link>{" "}
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      {/* Mobile Menu */}
+    {/* Mobile Menu */}
+<div className={`mobile-menu ${isMobileMenuVisible ? 'visible' : ''}`}>
+  <div className="menu-backdrop" onClick={toggleMobileMenu}></div>
+  <div className="close-btn" onClick={toggleMobileMenu}>
+    <i className="fas fa-times"></i>
+  </div>
+  <nav className="menu-box">
+    <div className="nav-logo">
+      <Link to="home">
+        <img src={`${baseUrlImage}/uploads/logo/${logo}`} alt="" title="" />
+      </Link>
+    </div>
+    <div className="menu-outer">
+      <Navigation />
+    </div>
+  </nav>
+</div>
 
-      {/* <!-- End Mobile Menu --> */}
     </>
   );
 };

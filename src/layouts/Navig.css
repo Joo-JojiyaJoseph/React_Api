@@ -1,0 +1,24 @@
+.mobile-menu {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+    z-index: 9999; /* Ensure it is on top */
+  }
+  
+  .mobile-menu.visible {
+    display: block !important; /* Show when visible class is added */
+  }
+  
+  .menu-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent; /* Clickable area to close the menu */
+  }
+  
