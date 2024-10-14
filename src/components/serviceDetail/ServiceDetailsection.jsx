@@ -30,7 +30,7 @@ const ServiceDetailsection = () => {
     }
   }, [id]);
 
-  //Get projects ,List----------------------
+  //Get service ,List----------------------
   const [services, setServices] = useState([]);
   async function getService() {
     try {
