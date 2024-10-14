@@ -67,7 +67,7 @@ const About = () => {
                                     <li>Electrical Engineering Services.</li>
                                     <li>IT Service and MEP Maintenance Services Rom Concept te Creation</li>
                                 </ul>
-                                <figure className="signature"><img src={signature_1} alt=""/></figure>
+                                {/* <figure className="signature"><img src={signature_1} alt=""/></figure> */}
                             </div>
                         </div>
                     </div>

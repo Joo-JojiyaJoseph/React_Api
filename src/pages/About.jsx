@@ -2,9 +2,10 @@ import React, { useContext, useEffect, useState } from 'react'
 import HeroAbout from '../components/about/HeroAbout'
 import AboutSection from '../components/about/AboutSection'
 import Testimonial from '../components/about/Testimonial'
-import Project from '../components/about/Project'
 import { Helmet } from 'react-helmet-async'
 import { AppContext } from '../context/AppContext'
+import ProjectSection from '../components/project/ProjectSection'
+import Funfact from "../components/home/Funfact";
 
 const About = () => {
   const { baseUrlImage } = useContext(AppContext);
@@ -48,7 +49,8 @@ const About = () => {
     <HeroAbout/>
     <AboutSection/>
     <Testimonial/>
-    <Project/>
+    <Funfact/>
+    <ProjectSection/>
    
     </>
   )

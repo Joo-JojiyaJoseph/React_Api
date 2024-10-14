@@ -12,7 +12,7 @@ const HeroService = () => {
                 <div className="content-box">
                     <h2>Services</h2>
                     <ul className="bread-crumb clearfix">
-                    <li><Link to="home">Home</Link></li>
+                    <li><Link to="../home">Home</Link></li>
                         <li>Services</li>
                     </ul>
                 </div>

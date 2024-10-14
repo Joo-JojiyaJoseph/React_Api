@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="content-box">
                     <h2>Contact Us</h2>
                     <ul className="bread-crumb clearfix">
-                        <li><Link to="home">Home</Link></li>
+                        <li><Link to="../home">Home</Link></li>
                         <li>Contact Us</li>
                     </ul>
                 </div>

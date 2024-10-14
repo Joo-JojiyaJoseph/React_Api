@@ -13,7 +13,7 @@ const HeroProject = () => {
                 <div className="content-box">
                     <h2>Projects</h2>
                     <ul className="bread-crumb clearfix">
-                    <li><Link to="home">Home</Link></li>
+                    <li><Link to="../home">Home</Link></li>
                         <li>Projects</li>
                     </ul>
                 </div>

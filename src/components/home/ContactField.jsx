@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Justifycentred = {
   display: 'flex',
   justifyContent: 'center',
@@ -23,9 +24,10 @@ const ContactField = () => {
             <div className="search-area">
             <div className="row clearfix" style={Justifycentred}>
                 <h2>Let’s Build Something Great Together</h2>
-                <button type="button" className="theme-btn btn-one" style={buttonStyle}> 
+               <Link to="/contact"> <button type="button" className="theme-btn btn-one" style={buttonStyle}> 
                   Contact
                 </button>
+                </Link>
               </div>
             </div>
           </div>

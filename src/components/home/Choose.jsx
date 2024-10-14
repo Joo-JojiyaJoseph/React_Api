@@ -81,7 +81,7 @@ const Choose = () => {
                                         <div className="video-inner p_relative d_block">
                                             <figure className="image-2 p_relative d_block"><img src={chooseus_2} alt=""/></figure>
                                             <div className="video-btn">
-                                                <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" className="lightbox-image" data-caption=""><i className="icon-27"></i></a>
+                                                <a href="" className="lightbox-image" data-caption="" target='blank'><i className="icon-27"></i></a>
                                             </div>
                                         </div>
                                     </div>

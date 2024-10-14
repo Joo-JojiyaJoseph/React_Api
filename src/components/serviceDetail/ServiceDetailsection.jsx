@@ -4,13 +4,13 @@ import { AppContext } from "../../context/AppContext";
 
 const ServiceDetailsection = () => {
 
-    const { baseUrlImage } = useContext(AppContext);
+  const { baseUrlImage } = useContext(AppContext);
   const { id } = useParams(); // Get project ID from the URL
   const [serviceids, setServiceids] = useState([]);
 
   async function getServiceids() {
     try {
-      const res_id = await fetch(`http://127.0.0.1:8000/api/serviceids/${id}`);
+      const res_id = await fetch(`https://capricornuae.com/AdminApi/api/serviceids/${id}`);
       if (!res_id.ok) {
         throw new Error(`Error: ${res_id.status} ${res_id.statusText}`);
       }
@@ -24,7 +24,6 @@ const ServiceDetailsection = () => {
       setError(error.message);
     }
   }
-
   useEffect(() => {
     if (id) {
       getServiceids();

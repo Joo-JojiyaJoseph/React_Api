@@ -13,6 +13,7 @@ import Faq from "../components/home/Faq";
 import Services from "../components/home/Services";
 import { Helmet } from "react-helmet-async";
 import { AppContext } from "../context/AppContext";
+import ProjectSection from "../components/project/ProjectSection";
 
 
 const Home = () => {
@@ -56,18 +57,18 @@ const Home = () => {
         <meta property="og:description" content={seoData.og_description} />
         <meta property="og:image" content={`${baseUrlImage}/${seoData.image}`} />
       </Helmet>
-  {/* <Slider/>
+ <Slider/>
   <ContactField/> 
   <About/>
   <Feature/>
   <Services/>
   <Choose/>
-  <Project/>
+  <ProjectSection/>
   <Faq/>
   <Client/>
   <Testimonial/>
   <Funfact/>
-  <Cta/> */}
+  <Cta/>
   </>
   );
 };

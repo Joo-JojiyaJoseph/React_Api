@@ -2,6 +2,7 @@ import React from 'react'
 import shape_12 from '/homes/shape-12.png'
 import shape_13 from '/homes/shape-13.png'
 import shape_7 from '/homes/shape-7.png'
+import ct11 from '/homes/ct1.png'
 const Cta = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Cta = () => {
                 <div className="pattern-3" style={{backgroundImage:`url(${shape_7})`}}></div>
                 <div className="pattern-4" style={{backgroundImage:`url(${shape_7})`}}></div>
             </div>
-            <figure className="image-layer"><img src="assets/images/resource/vector-1.png" alt=""/></figure>
+            <figure className="image-layer"><img src={ct11} alt=""/></figure>
             <div className="auto-container">
                 <div className="row clearfix">
                     <div className="col-lg-6 col-md-12 col-sm-12 content-column">
