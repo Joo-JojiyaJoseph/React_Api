@@ -173,7 +173,7 @@ const Nav = () => {
               <div className="btn-box">
                 {brochure ? (
                   <Link
-                    to={brochure.image}
+                    to={`${baseUrlImage}/uploads/brochure/${brochure.image}`}
                     className="theme-btn btn-one"
                     target="_blank"
                     rel="noopener noreferrer"
