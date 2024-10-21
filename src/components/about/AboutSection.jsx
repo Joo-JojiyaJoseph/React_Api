@@ -78,7 +78,7 @@ materials and most of all skilled and dedicated workers.
                           <div className="icon-box">
                             <i className="icon-9"></i>
                           </div>
-                          <h4>MEP Design</h4>
+                          <h4>Plumbing</h4>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6 col-sm-12 single-column">
@@ -86,7 +86,7 @@ materials and most of all skilled and dedicated workers.
                           <div className="icon-box">
                             <i className="icon-10"></i>
                           </div>
-                          <h4>HVAC SERVICES</h4>
+                          <h4>Electrical</h4>
                         </div>
                       </div>
                     </div>

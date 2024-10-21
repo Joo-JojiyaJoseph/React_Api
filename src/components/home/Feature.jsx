@@ -18,7 +18,7 @@ const Feature = () => {
                                 <div className="content-box p_relative d_block">
                                     <div className="icon-box p_relative d_block fs_50 lh_50"><i className="icon-12"></i></div>
                                     <h3><a >Plumbing Engineering Services.</a></h3>
-                                    {/* <p>Lorem ipsum dolor amet cons adicing elit sed.</p> */}
+                                    {/* <p>Delivering Efficient Solutions</p> */}
                                     {/* <div className="link"><a ><span>Read more</span><i className="icon-7"></i></a></div> */}
                                 </div>
                             </div>
@@ -31,7 +31,7 @@ const Feature = () => {
                                 <div className="content-box p_relative d_block">
                                     <div className="icon-box p_relative d_block fs_50 lh_50"><i className="icon-13"></i></div>
                                     <h3><a >HVAC ENGINEERING SERVICES</a></h3>
-                                    {/* <p>Lorem ipsum dolor amet cons adicing elit sed.</p> */}
+                                    {/* <p>Ensuring Optimal Comfort Every Space.</p> */}
                                     {/* <div className="link"><a ><span>Read more</span><i className="icon-7"></i></a></div> */}
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ const Feature = () => {
                                 <div className="content-box p_relative d_block">
                                     <div className="icon-box p_relative d_block fs_50 lh_50"><i className="icon-14"></i></div>
                                     <h3><a >Best Maintanance</a></h3>
-                                    {/* <p>Lorem ipsum dolor amet cons adicing elit sed.</p> */}
+                                    <p>Keeping Your Systems Year-Round.</p>
                                     {/* <div className="link"><a ><span>Read more</span><i className="icon-7"></i></a></div> */}
                                 </div>
                             </div>

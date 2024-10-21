@@ -22,10 +22,10 @@ const Cta = () => {
                             <div className="content-box p_relative d_block mr_20">
                                 <div className="sec-title p_relative mb_13">
                                     <h5 className="d_block fs_17 lh_25 fw_medium mb_13">Contact</h5>
-                                    <h2 className="d_block fs_40 lh_50 fw_bold">Need Help with The Best Electrical Services</h2>
+                                    <h2 className="d_block fs_40 lh_50 fw_bold">Need Help with The Best Services</h2>
                                 </div>
                                 <div className="text">
-                                    <p>All of our services are backed by our 100% satisfaction guarantee Our electricians can install anything.</p>
+                                    <p>All of our services are backed by our 100% satisfaction guarantee Our technicians can install anything.</p>
                                 </div>
                                 <div className="support-box p_relative d_block">
                                     <div className="icon-box p_absolute l_0 t_0 w_70 h_70 lh_70 b_radius_50 fs_40"><i className="icon-37"></i></div>

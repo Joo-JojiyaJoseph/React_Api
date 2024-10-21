@@ -60,12 +60,7 @@ const Slider = () => {
               <div key={index} className="slide-item p_relative pt_180">
                 <div className="image-layer p_absolute"
                   style={{
-              backgroundImage: `url(${baseUrlImage}/uploads/slider/${slider.image})`,
-              backgroundSize: 'cover',     // Ensures the image covers the container
-              backgroundPosition: 'center', // Centers the image within the container
-              backgroundRepeat: 'no-repeat', // Prevents image repetition
-              width: '100%', // Full width of the container
-              height: '100vh', // Full height of the viewport
+              backgroundImage: `url(${baseUrlImage}/uploads/slider/${slider.image})`
             }}
                   alt={slider.title}
                 ></div>
