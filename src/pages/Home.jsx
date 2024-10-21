@@ -58,7 +58,7 @@ const Home = () => {
         <meta property="og:image" content={`${baseUrlImage}/${seoData.image}`} />
       </Helmet>
  <Slider/>
-  {/* <ContactField/> 
+  <ContactField/> 
   <About/>
   <Feature/>
   <Services/>
@@ -68,7 +68,7 @@ const Home = () => {
   <Client/>
   <Testimonial/>
   <Funfact/>
-  <Cta/> */}
+  <Cta/>
   </>
   );
 };

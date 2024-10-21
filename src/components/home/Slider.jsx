@@ -1,8 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../context/AppContext";
-import $ from "jquery";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel";
 
 const Slider = () => {
   const [sliders, setSliders] = useState([]);
@@ -61,11 +58,15 @@ const Slider = () => {
           {sliders.length > 0 ? (
             sliders.map((slider, index) => (
               <div key={index} className="slide-item p_relative pt_180">
-                <div
-                  className="image-layer p_absolute"
+                <div className="image-layer p_absolute"
                   style={{
-                    backgroundImage: `url(${baseUrlImage}/uploads/slider/${slider.image})`
-                  }}
+              backgroundImage: `url(${baseUrlImage}/uploads/slider/${slider.image})`,
+              backgroundSize: 'cover',     // Ensures the image covers the container
+              backgroundPosition: 'center', // Centers the image within the container
+              backgroundRepeat: 'no-repeat', // Prevents image repetition
+              width: '100%', // Full width of the container
+              height: '100vh', // Full height of the viewport
+            }}
                   alt={slider.title}
                 ></div>
                 <div className="auto-container">
