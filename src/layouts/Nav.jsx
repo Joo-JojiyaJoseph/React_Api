@@ -104,11 +104,12 @@ const Nav = () => {
                   <i className="icon-1"></i>Sun-Thu 08:00AM-05:00PM
                 </li>
                 <li>
-                  <i className="icon-2"></i>380 Albert St, Melborne
+                  +971505071276
                 </li>
                 <li>
                   <i className="icon-3"></i>
-                  <a href="mailto:needhelp@info.com">needhelp@info.com</a>
+                  <a href="mailto: lnfo@capricornuae.com"> lnfo@capricornuae.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -118,25 +119,25 @@ const Nav = () => {
                   <p>Follow Us:</p>
                 </li>
                 <li>
-                  <Link to="home">
+                  <Link to="https://www.facebook.com/capricornuae/">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link to="home">
-                    <i className="fab fa-twitter"></i>
+                  <Link to="https://www.instagram.com/capricornuae/">
+                    <i className="fab fa-instagram"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link to="home">
+                  <Link to="https://ae.linkedin.com/company/capricorn-general-maintenance">
                     <i className="fab fa-linkedin-in"></i>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="home">
                     <i className="fab fa-pinterest-p"></i>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

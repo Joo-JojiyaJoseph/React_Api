@@ -60,7 +60,7 @@ const ServiceSections = () => {
                  <h3 style={{ height: '60px', display: 'flex', alignItems: 'center'}}>
                    <Link to="">{service.title}</Link>
                   </h3>
-                  <p style={{ height: '120px' }}>{service.description}</p>
+                  {/* <p style={{ height: '120px' }}>{service.description}</p> */}
                   <div className="link">
                     <Link to={`/service/${service.id}`}>
                       Read more<i className="icon-7"></i>
