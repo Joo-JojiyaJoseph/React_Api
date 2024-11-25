@@ -30,7 +30,7 @@ const Cta = () => {
                                 <div className="support-box p_relative d_block">
                                     <div className="icon-box p_absolute l_0 t_0 w_70 h_70 lh_70 b_radius_50 fs_40"><i className="icon-37"></i></div>
                                     <h5>For Emergency</h5>
-                                    <h3><a href="tel:01243507689">+012-4350-7689</a></h3>
+                                    <h3><a href="tel:+971505071276">+971505071276</a></h3>
                                 </div>
                             </div>
                         </div>

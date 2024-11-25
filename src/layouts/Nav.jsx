@@ -101,10 +101,11 @@ const Nav = () => {
             <div className="left-column">
               <ul className="info clearfix">
                 <li>
-                  <i className="icon-1"></i>Sun-Thu 08:00AM-05:00PM
+                  <i className="icon-1"></i>Opening 08:00AM-05:00PM
+                 
                 </li>
                 <li>
-                  +971505071276
+                <i className="icon-37"></i> +971505071276
                 </li>
                 <li>
                   <i className="icon-3"></i>
@@ -168,7 +169,7 @@ const Nav = () => {
               <div className="support-box">
                 <h6>
                   <i className="icon-4"></i>Call:{" "}
-                  <a href="tel:123045615523">+1 (230)-456-155-23</a>
+                  <a href="tel:+971505071276">+971505071276</a>
                 </h6>
               </div>
               <div className="btn-box">
@@ -206,7 +207,7 @@ const Nav = () => {
               <div className="support-box">
                 <h6>
                   <i className="icon-4"></i>Call:{" "}
-                  <a href="tel:123045615523">+1 (230)-456-155-23</a>
+                  <a href="tel:+971505071276">+971505071276</a>
                 </h6>
               </div>
               <div className="btn-box">

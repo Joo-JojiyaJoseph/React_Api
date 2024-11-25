@@ -63,7 +63,8 @@ const Home = () => {
   <Feature/>
   <Services/>
   <Choose/>
-  <ProjectSection/>
+  <Project/>
+  {/* <ProjectSection/> */}
   <Faq/>
   <Client/>
   <Testimonial/>

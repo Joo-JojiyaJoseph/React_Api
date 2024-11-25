@@ -23,11 +23,48 @@ const Client = () => {
     useEffect(() => {
       getclient();
     }, []);
+
+    useEffect(() => {
+      if (clients.length > 0) {
+        // Initialize Owl Carousel after clients are loaded
+        $('.five-item-carousel').owlCarousel({
+          loop:true,
+          margin:30,
+          nav:true,
+          smartSpeed: 500,
+          autoplay: 1000,
+          navText: [ '<span class="fal fa-angle-left"></span>', '<span class="fal fa-angle-right"></span>' ],
+          responsive:{
+            0:{
+              items:1
+            },
+            480:{
+              items:2
+            },
+            600:{
+              items:3
+            },
+            800:{
+              items:4
+            },			
+            1200:{
+              items:5
+            }
+    
+          }
+        });
+      }
+    }, [clients]);
+
+
   return (
     <>
         {/* <!-- clients-section --> */}
         <section className="clients-section p_relative">
             <div className="auto-container">
+            <div className="sec-title p_relative mb_50 centred">
+                    <h2 className="d_block fs_40 lh_50 fw_bold">Our Clients</h2>
+                </div>
                 <div className="five-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
                 {clients.length > 0 ? (
                     clients.map((client, index) => (

@@ -98,28 +98,28 @@ const Services = () => {
                                                     <div className="row clearfix">
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
-                                                                <div className="icon-box"><i className="icon-15"></i></div>
+                                                                <div className="icon-box"><i class="fas fa-cogs" title="Mechanical Design"></i></div>
                                                                 <h4><a >MEP Design</a></h4>
                                                                 <p> We are able to undertake complex MEP design and build projects at any level, up to major residential, commercial and industrial service for our clients using the most innovative and energy sector projects with high. </p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
-                                                                <div className="icon-box"><i className="icon-16"></i></div>
+                                                                <div className="icon-box"> <i class="fas fa-thermometer-half" title="Temperature Control"></i></div>
                                                                 <h4><a >HVAC ENGINEERING SERVICES</a></h4>
                                                                 <p>HVAC - a specialist Company in the UAE We provide HVAC (Heating, ventilation & Air Conditioning) systems including automated control systems to expertly manage the climatic working environment of your business. </p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
-                                                                <div className="icon-box"><i className="icon-17"></i></div>
+                                                                <div className="icon-box"><i class="fas fa-bolt" title="Electrical Power"></i></div>
                                                                 <h4><a>ELECTRICAL ENGINEERING</a></h4>
                                                                 <p>We offer a complete service from feasibility study to conceptual design and installation. </p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                                             <div className="single-item p_relative d_block">
-                                                                <div className="icon-box"><i className="icon-18"></i></div>
+                                                                <div className="icon-box">   <i class="fas fa-wrench" title="Plumbing Tools"></i></div>
                                                                 <h4><a > PLUMBING ENGINEERING SERVICES</a></h4>
                                                                 <p>Our plumbing services team handles all aspects of plumbing, water supply, drainage, swimming pool filtration systems.</p>
                                                             </div>

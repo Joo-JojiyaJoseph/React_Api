@@ -4,7 +4,7 @@ import shape_6 from '/homes/shape-6.png'
 import shape_7 from '/homes/shape-7.png'
 
 import chooseus_1 from '/homes/chooseus-1.jpg'
-import chooseus_2 from '/homes/chooseus-1.jpg'
+import chooseus_2 from '/homes/chooseus-2.jpg'
 
 const Choose = () => {
   return (
@@ -21,7 +21,8 @@ const Choose = () => {
                                 <div className="sec-title p_relative mb_30">
                                     <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Why Choose Us</h5>
                                     <h2 className="d_block fs_40 lh_50 fw_bold mb_25">Great Reasons For People Choose Easton</h2>
-                                    <p>Capricorn MEP employs professional staff who will certainly assist you from the design and planning stage until the successful implementation.Our team is equipped with the latest machinery,equipment, tools materials and most of all skilled and dedicated workers.</p>
+                                    <p>The company is devoted to develop and discover solutions that are a perfect fit for the Client's objective as well as budgets. The gamut of services offered by Capricorn MEP encompasses heating. ventilation, air conditioning. refrigeration, 
+                                    plumbing and utility distribution systems.</p>
                                 </div>
                                 <div className="inner-box centred p_relative d_block">
                                     <div className="row clearfix">
@@ -80,9 +81,9 @@ const Choose = () => {
                                     <div className="col-lg-6 col-md-6 col-sm-12 video-column">
                                         <div className="video-inner p_relative d_block">
                                             <figure className="image-2 p_relative d_block"><img src={chooseus_2} alt=""/></figure>
-                                            <div className="video-btn">
+                                            {/* <div className="video-btn">
                                                 <a href="" className="lightbox-image" data-caption="" target='blank'><i className="icon-27"></i></a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>

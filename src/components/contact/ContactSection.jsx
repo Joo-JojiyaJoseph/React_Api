@@ -81,10 +81,14 @@ const ContactSection = () => {
                                 <h3>Get In Touch</h3>
                                 <p>Give us a call or drop by anytime, we answer all enquiries within 24 hours.</p>
                                 <ul className="info-list clearfix">
-                                    <li>CAPRICORN GENERAL MAINTENANCE</li>
-                                    <li>Office No-7, M39, Mussafah, Abudhabi-UAE</li>
-                                    <li><a href="mailto:info@capriconuae.com">info@capriconuae.com</a></li>
-                                    <li>971(4)2283240</li>
+                                     {/* <li>CAPRICORN GENERAL MAINTENANCE</li>
+                                   <li>Office No-34, Third Floor, Tower 1, Mazyed Mall- Business Center,Mussafah, Abudhabi-UAE</li>
+                                    <li><a href="mailto:lnfo@capricornuae.com">lnfo@capricornuae.com</a></li>
+                                    <li>+971505071276</li> */}
+                                    <li><i class="icon-2"></i>&nbsp; Capricorn electromechanical, Mazyed mall business tower-1 Abudhabi, uae</li>
+                                        <li><i class="icon-4"></i>&nbsp; +971505071276</li>
+                                        <li><i class="icon-4"></i>&nbsp; 026453583</li>
+                                        <li><i class="icon-3"></i><a href="mailto: lnfo@capricornuae.com">&nbsp; lnfo@capricornuae.com</a></li>
                                 </ul>
                             </div>
                         </div>

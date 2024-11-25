@@ -106,9 +106,10 @@ const Footer = () => {
                                 </div>
                                 <div className="widget-content">
                                     <ul className="info-list clearfix">
-                                        <li> Office No-7,M39 ,Mussafah,Abudhabi-UAE</li>
-                                        <li> 971(4)2283240</li>
-                                        <li><a href="mailto: info@capriconuae.com"> info@capriconuae.com</a></li>
+                                        <li><i class="icon-2"></i> Capricorn electromechanical, Mazyed mall business tower-1 Abudhabi, uae</li>
+                                        <li><i class="icon-4"></i> +971505071276</li>
+                                        <li><i class="icon-4"></i> 026453583</li>
+                                        <li><i class="icon-3"></i><a href="mailto: lnfo@capricornuae.com"> lnfo@capricornuae.com</a></li>
                                     </ul>
                                 </div>
                             </div>

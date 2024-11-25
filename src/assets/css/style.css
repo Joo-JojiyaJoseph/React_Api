@@ -1652,13 +1652,13 @@ div#mCSB_1_container{
 }
 
 .banner-section .shape .shape-2{
-  width: 660px;
+  width: 100%;
   height: 110px;
   clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 0%);
 }
 
 .banner-section .shape .shape-3{
-  width: 715px;
+  width: 100%;
   height: 150px;
   opacity: 0.7;
   clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 0%);
@@ -1949,7 +1949,7 @@ div#mCSB_1_container{
 }
 
 .overlay-anim-black-bg:after{
-  background: #222;
+  /* background: #222; */
 }
 
 .overlay-anim-black-bg.overlay-animation:after{
@@ -2035,7 +2035,7 @@ div#mCSB_1_container{
 }
 
 .feature-block-one .inner-box:hover{
-  background: #f0965e;
+  background: #2e2d2b;
 }
 
 .feature-block-one .inner-box .image-box{

@@ -44,29 +44,32 @@ const About = () => {
                                     <h2 className="d_block fs_40 lh_50 fw_bold">From Concept to Creation</h2>
                                 </div>
                                 <div className="text p_relative d_block mb_30">
-                                    <p>Capricorn is a registered company in the UAE, The Head office and workshop is located in Abu Dhabi, So we can deliver a more convenient service to our clients across the UAE.</p>
+                                    <p>Capricorn is a registered company in the UAE, The Head office and workshop is located in Abu Dhabi, So we can deliver a more convenient service to our clients across the UAE. 
+
+Capricorn MEP is part of organization established and in full operation Since 2018. After a couple of years we have proven our position in the market in the field of Construction and M EP Services by being one of the fastest growing companies in the Region. 
+                                    </p>
                                 </div>
                                 <div className="inner p_relative d_block mb_40">
                                     <div className="row clearfix">
                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                             <div className="single-item">
-                                                <div className="icon-box"><i className="icon-9"></i></div>
+                                                <div className="icon-box"><i class="fas fa-cogs" title="Mechanical Design"></i></div>
                                                 <h4>MEP Design and Installation</h4>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 single-column">
                                             <div className="single-item">
-                                                <div className="icon-box"><i className="icon-10"></i></div>
+                                                <div className="icon-box"> <i class="fas fa-thermometer-half" title="Temperature Control"></i></div>
                                                 <h4>HVAC Engineering Services</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <ul className="list-style-one clearfix">
+                                {/* <ul className="list-style-one clearfix">
                                     <li>Plumbing Engineering Services.</li>
                                     <li>Electrical Engineering Services.</li>
                                     <li>IT Service and MEP Maintenance Services Rom Concept te Creation</li>
-                                </ul>
+                                </ul> */}
                                 {/* <figure className="signature"><img src={signature_1} alt=""/></figure> */}
                             </div>
                         </div>
