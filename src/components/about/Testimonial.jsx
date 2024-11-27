@@ -35,7 +35,7 @@ useEffect(() => {
           <div className="sec-title light p_relative mb_50 centred">
             <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Testimonials</h5>
             <h2 className="d_block fs_40 lh_50 fw_bold">
-              What Our Clients Say <br /> About Easton.
+              What Our Clients Say <br /> About Capricorn.
             </h2>
           </div>
           <div className="two-item-carousel owl-carousel owl-theme owl-nav-none">

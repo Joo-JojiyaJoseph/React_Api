@@ -39,7 +39,7 @@ const Testimonial = () => {
                 </h5>
                 <h2 className="d_block fs_40 lh_50 fw_bold">
                   What Our Client Say <br />
-                  About Easton.
+                  About Capricorn.
                 </h2>
               </div>
             </div>

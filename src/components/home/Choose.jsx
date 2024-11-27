@@ -20,7 +20,7 @@ const Choose = () => {
                             <div className="content-box">
                                 <div className="sec-title p_relative mb_30">
                                     <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Why Choose Us</h5>
-                                    <h2 className="d_block fs_40 lh_50 fw_bold mb_25">Great Reasons For People Choose Easton</h2>
+                                    <h2 className="d_block fs_40 lh_50 fw_bold mb_25">Great Reasons For People Choose Capricorn</h2>
                                     <p>The company is devoted to develop and discover solutions that are a perfect fit for the Client's objective as well as budgets. The gamut of services offered by Capricorn MEP encompasses heating. ventilation, air conditioning. refrigeration, 
                                     plumbing and utility distribution systems.</p>
                                 </div>
