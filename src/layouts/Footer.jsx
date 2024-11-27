@@ -106,7 +106,7 @@ const Footer = () => {
                                 </div>
                                 <div className="widget-content">
                                     <ul className="info-list clearfix">
-                                        <li><i class="icon-2"></i> Capricorn electromechanical, Mazyed mall business tower-1 Abudhabi, uae</li>
+                                        <li><i class="icon-2"></i> Capricorn electromechanical,<br/> Mazyed mall business tower-1 <br/>Abudhabi, uae</li>
                                         <li><i class="icon-4"></i> +971505071276</li>
                                         <li><i class="icon-4"></i> 026453583</li>
                                         <li><i class="icon-3"></i><a href="mailto: lnfo@capricornuae.com"> lnfo@capricornuae.com</a></li>
