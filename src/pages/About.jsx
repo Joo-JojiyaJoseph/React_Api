@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async'
 import { AppContext } from '../context/AppContext'
 import ProjectSection from '../components/project/ProjectSection'
 import Funfact from "../components/home/Funfact";
+import DirectoreMsg from '../components/DirectoreMsg'
 
 const About = () => {
   const { baseUrlImage } = useContext(AppContext);
@@ -48,6 +49,7 @@ const About = () => {
       </Helmet>
     <HeroAbout/>
     <AboutSection/>
+    <DirectoreMsg/>
     <Testimonial/>
     <Funfact/>
     <ProjectSection/>
