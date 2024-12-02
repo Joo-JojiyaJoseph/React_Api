@@ -8,13 +8,13 @@ const DirectorMsg = () => {
 
     async function getdirector_message() {
         try {
-            const res = await fetch("/api/director_message");
+            const res = await fetch("https://capricornuae.com/AdminApi/api/director_message");
             if (!res.ok) {
               throw new Error(`Error: ${res.status} ${res.statusText}`);
             }
             const data = await res.json();
-            setdirector_messages(data.director_messages);
-            console.log(data.director_messages)
+            setdirector_messages(data.director_message);
+            console.log(data.director_message)
           } 
           catch (error) {
             setError(error.message);
@@ -50,7 +50,7 @@ const DirectorMsg = () => {
           </div>
         </div>
         <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-        <img src={`${baseUrlImage}/${director_messages.image}`}   alt="About Us 1" />
+        <img src={`${baseUrlImage}/uploads/director_message/${director_messages.image}`}   alt="About Us 1" />
         </div>
       </div>
     </div>

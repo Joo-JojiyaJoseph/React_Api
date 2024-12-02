@@ -13,12 +13,12 @@ const Footer = () => {
   const [error, setError] = useState(null);
   async function getfooter_certification() {
     try {
-      const res = await fetch("/api/footer_certification");
+      const res = await fetch("https://capricornuae.com/AdminApi/api/footer_certification");
       if (!res.ok) {
         throw new Error(`Error: ${res.status} ${res.statusText}`);
       }
       const data = await res.json();
-      setfooter_certifications(data.footer_certifications);
+      setfooter_certifications(data.footer_certification);
       console.log(data.footer_certifications);
     } catch (error) {
       setError(error.message);
@@ -27,7 +27,7 @@ const Footer = () => {
   useEffect(() => {
     getfooter_certification();
   }, []);
-
+console.log(footer_certifications);
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -99,9 +99,9 @@ const Footer = () => {
                           (footer_certification, index) => (
                             <li key={index} className="p-2">
                               <img
-                                src={`${baseUrlImage}/uploads/logo/${footer_certification.image}`}
+                                src={`${baseUrlImage}/uploads/footer_certification/${footer_certification.image}`}
                                 style={{ width: "70px", height: "70px" }}
-                                alt=""
+                                alt="demo"
                               />
                             </li>
                           )

@@ -10,7 +10,7 @@ const [error, setError] = useState(null);
 
 async function gettestimonial() {
     try {
-        const res = await fetch("/api/testimonials");
+        const res = await fetch("https://capricornuae.com/AdminApi/api/testimonials");
         if (!res.ok) {
           throw new Error(`Error: ${res.status} ${res.statusText}`);
         }
