@@ -35,7 +35,7 @@ console.log(footer_certifications);
       setIsVisible(false);
     }
   };
-
+  const [hoverIndex, setHoverIndex] = useState(null);
   // Scroll to top when the button is clicked
   const scrollToTop = () => {
     window.scrollTo({
@@ -100,8 +100,11 @@ console.log(footer_certifications);
                             <li key={index} className="p-2">
                               <img
                                 src={`${baseUrlImage}/uploads/footer_certification/${footer_certification.image}`}
-                                style={{ width: "70px", height: "70px" }}
-                                alt="demo"
+                                style={{ width: "70px", height: "70px",  transform: hoverIndex === index ? "scale(2.5)" : "scale(1)",
+                                  transition: "transform 0.3s ease-in-out", }}
+                                  alt="demo"
+          onMouseEnter={() => setHoverIndex(index)}
+          onMouseLeave={() => setHoverIndex(null)}
                               />
                             </li>
                           )
