@@ -13,6 +13,7 @@ import Faq from "../components/home/Faq";
 import Services from "../components/home/Services";
 import { Helmet } from "react-helmet-async";
 import { AppContext } from "../context/AppContext";
+import DirectoreMsg from '../components/DirectoreMsg'
 import ProjectSection from "../components/project/ProjectSection";
 
 
@@ -60,6 +61,7 @@ const Home = () => {
  <Slider/>
   <ContactField/> 
   <About/>
+  <DirectoreMsg/>
   <Feature/>
   <Services/>
   <Choose/>
