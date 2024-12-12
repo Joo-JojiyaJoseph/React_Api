@@ -180,7 +180,7 @@ console.log(footer_certifications);
                         <i class="icon-3"></i>
                         <a href="mailto: lnfo@capricornuae.com">
                           {" "}
-                          lnfo@capricornuae.com
+                           lnfo@capricornuae.com
                         </a>
                       </li>
                     </ul>
@@ -200,7 +200,7 @@ console.log(footer_certifications);
               </div>
               <ul className="footer-nav">
                 <li>
-                  <a href="">Terms of footer_certification</a>
+                  <a href="">Terms of Conditions</a>
                 </li>
                 <li>
                   <a href="">Privacy Policy</a>
