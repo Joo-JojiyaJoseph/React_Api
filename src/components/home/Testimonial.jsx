@@ -64,9 +64,9 @@ const Testimonial = () => {
                                 alt=""
                               />
                             </figure>
-                            <h5>{testimonial.name}</h5>
+                            {/* <h5>{testimonial.name}</h5> */}
                             <span className="designation p_relative d_block">
-                              {testimonial.designation}
+                              {/* {testimonial.designation} */}
                             </span>
                           </div>
                         </div>

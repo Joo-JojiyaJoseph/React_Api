@@ -166,7 +166,7 @@ console.log(footer_certifications);
                   <div className="widget-content">
                     <ul className="info-list clearfix">
                       <li>
-                        <i class="icon-2"></i> Capricorn electromechanical,
+                        <i class="icon-2"></i> Capricorn electromechanical LLC,
                         <br /> Mazyed mall business tower-1 <br />
                         Abudhabi, uae
                       </li>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import './Navig.js';
 import './Navig.css';
+import FloatingSidebar from "./FloatingSidebar.jsx";
 
 const Nav = () => {
   
@@ -108,6 +109,10 @@ const Nav = () => {
                 <i className="icon-37"></i> +971505071276
                 </li>
                 <li>
+                <i class="icon-4"></i> 026453583
+                </li>
+              
+                <li>
                   <i className="icon-3"></i>
                   <a href="mailto: lnfo@capricornuae.com"> lnfo@capricornuae.com
                   </a>
@@ -120,12 +125,12 @@ const Nav = () => {
                   <p>Follow Us:</p>
                 </li>
                 <li>
-                  <Link to="https://www.facebook.com/capricornuae/">
+                  <Link to="https://www.facebook.com/capricornuae">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.instagram.com/capricornuae/">
+                  <Link to="https://www.instagram.com/capricornuae">
                     <i className="fab fa-instagram"></i>
                   </Link>
                 </li>
@@ -245,8 +250,7 @@ const Nav = () => {
     </div>
   </nav>
 </nav>
-
-
+<FloatingSidebar/>
     </>
   );
 };

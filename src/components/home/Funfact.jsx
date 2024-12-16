@@ -11,7 +11,7 @@ const Funfact = () => {
                         <div className="inner-box">
                             <div className="icon-box p_relative d_block fs_60"><i className="icon-38"></i></div>
                             <div className="count-outer count-box">
-                                <span className="count-text" data-speed="1500" data-stop="90">12</span>
+                                <span className="count-text" data-speed="1500" data-stop="90">300+</span>
                             </div>
                             <p>Successful projects</p>
                         </div>
@@ -20,7 +20,7 @@ const Funfact = () => {
                         <div className="inner-box">
                             <div className="icon-box p_relative d_block fs_60"><i className="icon-39"></i></div>
                             <div className="count-outer count-box">
-                                <span className="count-text" data-speed="1500" data-stop="2.6">100</span><span></span>
+                                <span className="count-text" data-speed="1500" data-stop="2.6">300+</span><span></span>
                             </div>
                             <p>Satisfied Clients</p>
                         </div>
@@ -38,7 +38,7 @@ const Funfact = () => {
                         <div className="inner-box">
                             <div className="icon-box p_relative d_block fs_60"><i className="icon-41"></i></div>
                             <div className="count-outer count-box">
-                                <span className="count-text" data-speed="1500" data-stop="10">50</span>
+                                <span className="count-text" data-speed="1500" data-stop="10">3+</span>
                             </div>
                             <p>Awards Win</p>
                         </div>

@@ -30,7 +30,7 @@ const About = () => {
                                 <div className="text-box centred p_absolute l_0 b_0 z_2">
                                     <div className="light-icon p_absolute">
                                         <img src={icon2}  alt=""/></div>
-                                    <h2 className="d_block fs_40 lh_40 fw_bold mb_18">30</h2>
+                                    <h2 className="d_block fs_40 lh_40 fw_bold mb_18">10</h2>
                                     <h3 className="d_block fw_medium">Years Experience of This Field</h3>
                                 </div>
                             </div>

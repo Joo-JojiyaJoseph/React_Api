@@ -15,7 +15,7 @@ const Services = () => {
             <div className="auto-container">
                 <div className="sec-title p_relative mb_50 centred">
                     {/* <h5 className="d_block fs_17 lh_25 fw_medium mb_9">Our Services</h5> */}
-                    <h2 className="d_block fs_40 lh_50 fw_bold">We are a Full Service Electrical <br />Contractor</h2>
+                    <h2 className="d_block fs_40 lh_50 fw_bold">We are a Full Service MEP <br />Contractor</h2>
                 </div>
                 <div className="tabs-box">
                     {/* <div className="tab-btn-box p_relative d_block mb_60 centred">

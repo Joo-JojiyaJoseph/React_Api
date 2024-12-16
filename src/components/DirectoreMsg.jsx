@@ -50,7 +50,7 @@ const DirectorMsg = () => {
           </div>
         </div>
         <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-        <img src={`${baseUrlImage}/uploads/director_message/${director_messages.image}`}   alt="About Us 1" />
+        <img src={`${baseUrlImage}/uploads/director_message/${director_messages.image}`}   alt="About Us 1" style={{height:"50%"}}/>
         </div>
       </div>
     </div>

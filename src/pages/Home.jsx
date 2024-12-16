@@ -55,7 +55,7 @@ const Home = () => {
         <meta name="description" content={seoData.description} />
         <meta name="keywords" content={seoData.keywords} />
         <meta property="og:title" content={seoData.og_title} />
-        <meta property="og:description" content={seoData.og_description} />
+        <meta property="og:description" content={seoData.og_description} /> 
         <meta property="og:image" content={`${baseUrlImage}/${seoData.image}`} />
       </Helmet>
  <Slider/>
@@ -67,7 +67,7 @@ const Home = () => {
   <Choose/>
   <Project/>
   {/* <ProjectSection/> */}
-  <Faq/>
+  {/* <Faq/> */}
   <Client/>
   <Testimonial/>
   <Funfact/>
