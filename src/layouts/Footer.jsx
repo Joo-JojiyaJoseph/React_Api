@@ -82,13 +82,14 @@ console.log(footer_certifications);
                     <Link to="/home">
                       <img
                         src={`${baseUrlImage}/uploads/logo/${logo}`}
+                        style={{ width: "250px", height: "70px", }}
                         alt=""
                       />
                     </Link>
                   </figure>
                   <div className="text">
                     <p>
-                      Capricorn brings your designs to life. A great concept can
+                    Capricorn Electro Mechanical LLC brings your designs to life. A great concept can
                       make your space truly unique.{" "}
                     </p>
                   </div>
@@ -166,9 +167,9 @@ console.log(footer_certifications);
                   <div className="widget-content">
                     <ul className="info-list clearfix">
                       <li>
-                        <i class="icon-2"></i> Capricorn electromechanical LLC,
-                        <br /> Mazyed mall business tower-1 <br />
-                        Abudhabi, uae
+                        <i class="icon-2"></i> Capricorn Electro Mechanical LLC,
+                        <br /> Mazyed Mall Business Tower-1 <br />
+                        Abudhabi, UAE
                       </li>
                       <li>
                         <i class="icon-4"></i> +971505071276
@@ -178,9 +179,9 @@ console.log(footer_certifications);
                       </li>
                       <li>
                         <i class="icon-3"></i>
-                        <a href="mailto: lnfo@capricornuae.com">
+                        <a href="mailto: info@capricornuae.com">
                           {" "}
-                           lnfo@capricornuae.com
+                           info@capricornuae.com
                         </a>
                       </li>
                     </ul>

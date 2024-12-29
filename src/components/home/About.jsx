@@ -30,7 +30,7 @@ const About = () => {
                                 <div className="text-box centred p_absolute l_0 b_0 z_2">
                                     <div className="light-icon p_absolute">
                                         <img src={icon2}  alt=""/></div>
-                                    <h2 className="d_block fs_40 lh_40 fw_bold mb_18">10</h2>
+                                    <h2 className="d_block fs_40 lh_40 fw_bold mb_18">10+</h2>
                                     <h3 className="d_block fw_medium">Years Experience of This Field</h3>
                                 </div>
                             </div>
@@ -44,9 +44,9 @@ const About = () => {
                                     <h2 className="d_block fs_40 lh_50 fw_bold">From Concept to Creation</h2>
                                 </div>
                                 <div className="text p_relative d_block mb_30">
-                                    <p>Capricorn is a registered company in the UAE, The Head office and workshop is located in Abu Dhabi, So we can deliver a more convenient service to our clients across the UAE. 
+                                    <p>Capricorn Electro Mechanical LLC is a registered company in the UAE, The Head office and workshop is located in Abu Dhabi, So we can deliver a more convenient service to our clients across the UAE. 
 
-Capricorn MEP is part of organization established and in full operation Since 2018. After a couple of years we have proven our position in the market in the field of Construction and M EP Services by being one of the fastest growing companies in the Region. 
+Capricorn Electro Mechanical LLC is part of organization established and in full operation Since 2018. After a couple of years we have proven our position in the market in the field of Construction and M EP Services by being one of the fastest growing companies in the Region. 
                                     </p>
                                 </div>
                                 <div className="inner p_relative d_block mb_40">

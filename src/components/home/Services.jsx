@@ -90,7 +90,7 @@ const Services = () => {
                                             <div className="col-lg-4 col-md-12 col-sm-12 text-column">
                                                 <div className="text p_relative d_block">
                                                     <h3>Our Service</h3>
-                                                    <p>Capricorn MEP capabilities in Mechanical, Electrical & Plumbing (MEP) are built around providing feasible and economically viable designs. The company is devoted to develop and discover solutions that are a perfect fit for the Client’s objective as well as budgets. The gamut of services offered by Capricorn MEP encompasses heating, ventilation, air conditioning, refrigeration, plumbing and utility distribution systems.</p>
+                                                    <p>Capricorn Electro Mechanical LLC capabilities in Mechanical, Electrical & Plumbing (MEP) are built around providing feasible and economically viable designs. The company is devoted to develop and discover solutions that are a perfect fit for the Client’s objective as well as budgets. The gamut of services offered by Capricorn Electro Mechanical LLC encompasses heating, ventilation, air conditioning, refrigeration, plumbing and utility distribution systems.</p>
                                                        </div>
                                             </div>
                                             <div className="col-lg-8 col-md-12 col-sm-12 inner-column">

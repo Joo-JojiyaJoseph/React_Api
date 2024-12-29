@@ -5,7 +5,7 @@ const FloatingSidebar = () => {
     <div className="floating-sidebar">
     {/* WhatsApp Link */}
     <a
-        href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+        href="https://wa.me/971505071276"
         target="_blank"
         rel="noopener noreferrer"
         className="sidebar-item whatsapp"
@@ -18,7 +18,7 @@ const FloatingSidebar = () => {
 
     {/* Email Link */}
     <a
-        href="mailto:YOUR_EMAIL_ADDRESS"
+        href="mailto:info@capricornuae.com"
         className="sidebar-item email"
     >
         <img
